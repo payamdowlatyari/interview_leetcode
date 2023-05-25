@@ -130,6 +130,5 @@ dist
 .pnp.*
 
 # Mina
-*.py
 Q1_Monica/.DS_Store
 .DS_Store
