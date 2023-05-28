@@ -1,5 +1,6 @@
 import recoverTree from "./recover-tree.js";
 import TreeNode from "./TreeNode.js";
+import preOrderTravarsal from "./preOrderTravarsal.js";
 
 // Example: 
 //
@@ -12,16 +13,6 @@ import TreeNode from "./TreeNode.js";
 // Input: root = [1,3,null,null,2]
 // Output: [3,1,null,null,2]
 // Explanation: 3 cannot be a left child of 1 because 3 > 1. Swapping 1 and 3 makes the BST valid.
-
-const preOrderTravarsal = (root) => {
-
-    if (root === null) return;
-
-    console.log(root.val);
-    
-    preOrderTravarsal(root.left);
-    preOrderTravarsal(root.right);
-}
 
 const recoverTreeTest = () => {
 
@@ -61,7 +52,7 @@ const recoverTreeTest = () => {
     preOrderTravarsal(tree2);
     console.log('------------');
 
-        // input tree2: root = [3,1,4,null,null,2]
+    // input tree2: root = [3,1,4,null,null,2]
     // expected output: root = [2,1,4,null,null,3]
 
     let tree3 = new TreeNode(3);

@@ -69,6 +69,4 @@ function recoverTree(root) {
     }
 };
 
-
-
 export default recoverTree;

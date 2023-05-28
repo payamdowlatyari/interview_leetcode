@@ -1,5 +1,6 @@
 import TreeNode from "./TreeNode.js";
 import isValidBST from "./isValid-tree.js";
+import preOrderTravarsal from "./preOrderTravarsal.js";
 
 // Example 1:
 
@@ -21,16 +22,6 @@ import isValidBST from "./isValid-tree.js";
 // Input: root = [5,1,4,null,null,3,6]
 // Output: false
 // Explanation: The root node's value is 5 but its right child's value is 4.
-
-const preOrderTravarsal = (root) => {
-
-    if (root === null) return;
-
-    console.log(root.val);
-    
-    preOrderTravarsal(root.left);
-    preOrderTravarsal(root.right);
-}
 
 const isValidBSTTest = () => {
 
