@@ -6,34 +6,69 @@
  
 // Follow up: Could you solve it both recursively and iteratively?
 
-const travarse = (root) => {
+var leftTree = [];
+var rightTree = [];
 
-    if (!root) return;
+const leftTreeToArray = (root) => {
 
-    let element = [];
-    element.push(root.val);
+    if (root) { 
 
-    if (root.left) element.push(travarse(root.left));
-    if (root.right) element.push(travarse(root.right));
- 
-    return element;
+        if (root.left) 
+        leftTreeToArray(root.left); 
+
+        if (root.val === null) leftTree.push(0);
+        else leftTree.push(root.val);
+
+        if (root.right) 
+        leftTreeToArray(root.right);  
+    }   
+}
+
+const rightTreeToArray = (root) => {
+
+    if (root) { 
+
+        if (root.left) 
+        rightTreeToArray(root.left); 
+
+        if (root.val === null) rightTree.push(0);
+        else rightTree.push(root.val);
+
+        if (root.right) 
+        rightTreeToArray(root.right);  
+    }   
 }
 
 const isSymmetric = function(root) {
 
-    console.log(travarse(root));
-    
-    // if (!root) return true;
+    if (root.left === null && root.right === null) return true;
 
-    // if (root.left && root.right) 
-    // if (root.left.val != root.right.val) 
-    //         return false;
+    leftTree = [];
+    rightTree = [];
 
-    // if (root.left && root.right) 
-    // return (isSymmetric(root.left) && isSymmetric(root.right));
+    leftTreeToArray(root.left);
+    rightTreeToArray(root.right);
 
-    
-    
+    console.log('leftTree: ' + leftTree + ' len: ' + leftTree.length);
+    console.log('rightTree: ' + rightTree + ' len: ' + rightTree.length);
+
+    if (leftTree.length != rightTree.length) return false;
+
+    console.log(leftTree);
+    console.log(rightTree);
+
+    let i = 0;
+    let j = rightTree.length - 1;
+
+    while (i < leftTree.length && j >= 0) {
+        console.log('i: ' + i + ' -> ' + leftTree[i] + '   =?   j: ' + j + ' -> ' + rightTree[j]);
+        if (leftTree[i] != rightTree[j]) 
+                return false;
+        i++;
+        j--;
+    }
+
+    return true;   
 };
 
 export default isSymmetric;

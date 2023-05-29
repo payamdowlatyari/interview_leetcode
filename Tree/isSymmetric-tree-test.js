@@ -1,6 +1,7 @@
 import TreeNode from "./TreeNode.js";
 import isSymmetric from "./isSymmetric-tree.js";
 import preOrderTravarsal from "./preOrderTravarsal.js";
+import inOrderTravarsal from "./inOrderTravarsal.js";
 
 const isSymmetricTest = () => {
 
@@ -20,6 +21,9 @@ const isSymmetricTest = () => {
     console.log('preorder:');
     preOrderTravarsal(tree1);
     console.log('------------');
+    console.log('inorder:');
+    inOrderTravarsal(tree1);
+    console.log('------------');
     console.log(isSymmetric(tree1));
     console.log('------------');
     console.log();
@@ -31,14 +35,17 @@ const isSymmetricTest = () => {
     let tree2 = new TreeNode(1);
     tree2.left = new TreeNode(2);
     tree2.right = new TreeNode(2);
-    tree1.left.left = new TreeNode(null);
-    tree1.left.right = new TreeNode(3);
-    tree2.right.left = new TreeNode(null);
-    tree2.right.right = new TreeNode(3);
+    tree2.left.left = new TreeNode(2);
+    tree2.left.right = new TreeNode(null);
+    tree2.right.left = new TreeNode(2);
+    // tree2.right.right = new TreeNode(3);
 
     console.log('-----2------');
     console.log('preorder:');
     preOrderTravarsal(tree2);
+    console.log('------------');
+    console.log('inorder:');
+    inOrderTravarsal(tree2);
     console.log('------------');
     console.log(isSymmetric(tree2));
     console.log('------------');
