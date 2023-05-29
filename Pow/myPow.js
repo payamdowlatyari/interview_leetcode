@@ -2,10 +2,10 @@
 
 // Constraints:
 // -100.0 < x < 100.0
-// -231 <= n <= 231-1
+// -2^31 <= n <= 2^31 - 1
 // n is an integer.
 // Either x is not zero or n > 0.
-// -104 <= xn <= 104
+// -10^4 <= xn <= 10^4
 
 var myPow = function(x, n) {
 
