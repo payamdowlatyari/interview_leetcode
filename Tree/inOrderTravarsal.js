@@ -1,6 +1,6 @@
 export default function inOrderTravarsal(root){
 
-    if (root === null) return;
+    if (root == null) return;
     
     inOrderTravarsal(root.left);
 
