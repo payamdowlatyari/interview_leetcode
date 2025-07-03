@@ -9,10 +9,15 @@
 // Follow up: Could you solve it without loops/recursion?
 
 /**
+ * Checks if a number is a power of two.
+ * 
  * @param {number} n
  * @return {boolean}
+ * 
+ * Time complexity: O(log n)
+ * Space complexity: O(1)
  */
-export default function isPowerOfTwo(n) {
+export function isPowerOfTwo(n) {
 
     if (n == 0) return false; 
 
@@ -20,7 +25,6 @@ export default function isPowerOfTwo(n) {
 
 
     if (n == 1) return true;
-
 
         return isPowerOfTwo(n / 2);
    

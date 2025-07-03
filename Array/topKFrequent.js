@@ -11,42 +11,21 @@
 // Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 
 /**
+ * Returns the k most frequent elements in an array.
+ * This function counts the frequency of each element in the array,
+ * sorts them by frequency, and returns the top k elements.
+ * 
  * @param {number[]} nums
  * @param {number} k
  * @return {number[]}
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(n)
  */
-export default function topKFrequent(nums, k){
+export function topKFrequent(nums, k){
 
-    if (nums.length == 1 && k == 1) return nums;
-
-    let map = {};
-    let i = 0;
-
-    while (i < nums.length) {
-        if (!map[nums[i]]) {
-            map[nums[i]] = {};
-            map[nums[i]] = 1;
-        } 
-            map[nums[i]]++;
-        i++;
-    }
-
-    let sorted = [];
-
-    for (let item in map) {
-        sorted.push([item, map[item]]);
-    }
-
-    sorted.sort(function(a, b) {
-    return b[1] - a[1];
-    });
-    
-    let res = [];
-    let j = 0;
-
-    while (j < k) {
-        res.push(sorted[j][0])
-        j++;
-    }    
-    return res;
+    let map = new Map();
+    for (let num of nums) map.set(num, (map.get(num) || 0) + 1);
+    let res = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
+    return res.slice(0, k).map(a => a[0]);
 };

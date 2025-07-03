@@ -18,54 +18,28 @@
 // Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
 /**
+ * Merges two sorted arrays nums1 and nums2 into a single sorted array nums1.
+ * 
  * @param {number[]} nums1
  * @param {number} m
  * @param {number[]} nums2
  * @param {number} n
- * @return {void} Do not return anything, modify nums1 in-place instead.
+ * 
+ * Time complexity: O(m + n)
+ * Space complexity: O(1)
  */
-export default function merge(nums1, m, nums2, n) {
-  
-    let i = 0;
-    let j = 0;
-    let k = 0;
+export function merge(nums1, m, nums2, n) {
 
-    while (i < n) {
-       
-        console.log(nums2[i] + ' -i- ' + (i));
-        while (j < m + n) {
-            console.log(nums1[j] + ' --j-- ' + (j));
+    let i = m - 1, j = n - 1, k = m + n - 1;
 
-            if (j >= m && nums1[j] == 0) {
-                nums1[j] = nums2[i];
-                console.log(nums1 + ' 1 == 0')
-                break;
-            }
-            
-            if ((nums2[i] < nums1[j])) {
-                k = j;
-                while (k < m + n) {
-                    console.log(nums1[k] + ' ---k--- ' + (k));
-               
-                    if (nums1[k] == 0) 
-                        break;
-                    else 
-                    k++;
-                }
-
-                while (k > j) {
-                    nums1[k] = nums1[k - 1];
-                    k--;
-                }
-
-                nums1[j] = nums2[i];
-                console.log(nums1 + ' 2 === ?' + i)
-                break;
-            }
-            j++;
+    while (j >= 0) {
+        if (i >= 0 && nums1[i] > nums2[j]) {
+            nums1[k] = nums1[i];
+            i--;
+        } else {
+            nums1[k] = nums2[j];
+            j--;
         }
-        i++;
+        k--;
     }
-
-    console.log(nums1);
-};
+}

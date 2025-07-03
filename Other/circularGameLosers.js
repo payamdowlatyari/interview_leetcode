@@ -23,11 +23,22 @@
 // 1 <= k <= n <= 50
 
 /**
+ * Returns the losers of the game
+ * 
+ * The game goes as follows:
+ * 1) Start at 1st friend and pass the ball to the friend who is k steps away from them - 2nd friend.
+ * 2) 2nd friend passes the ball to the friend who is 2k steps away from them - 3rd friend.
+ * 3) 3rd friend passes the ball to the friend who is 3k steps away from them  - 4th friend.
+ * 4) The game ends as 4th friend receives the ball for the second time.
+ * 
  * @param {number} n
  * @param {number} k
  * @return {number[]}
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(n)
  */
-export default function circularGameLosers(n, k) {
+export function circularGameLosers(n, k) {
 
     let winners = [];
 

@@ -10,11 +10,15 @@
 // coordinates contains no duplicate point.
 
 /**
+ * Checks if the given coordinates form a straight line.
+ * 
  * @param {number[][]} coordinates
  * @return {boolean}
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(1)
  */
-
-export default function checkStraightLine(coordinates){
+export function checkStraightLine(coordinates){
 
     if (coordinates.length == 2) return true; 
 

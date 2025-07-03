@@ -3,6 +3,7 @@
 // 1 if x is positive.
 // -1 if x is negative.
 // 0 if x is equal to 0.
+
 // You are given an integer array nums. Let product be the product of all values in the array nums.
 
 // Return signFunc(product).
@@ -15,8 +16,11 @@
 /**
  * @param {number[]} nums
  * @return {number}
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(1)
  */
-export default function arraySign(nums) {
+export function arraySign(nums) {
     
     if (nums.includes(0)) return 0;
 

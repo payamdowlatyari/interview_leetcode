@@ -1,3 +1,5 @@
+import { ListNode } from "./node/ListNode.js";
+
 // Given the head of a singly linked list, reverse the list, and return the reversed list.
 
 // Constraints:
@@ -14,10 +16,15 @@
  */
 
 /**
+ * Reverses a singly linked list.
+ * 
  * @param {ListNode} head
  * @return {ListNode}
+ * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  */
-export default function reverseList(head){
+export function reverseList(head){
 
     if (!head) return null;
 

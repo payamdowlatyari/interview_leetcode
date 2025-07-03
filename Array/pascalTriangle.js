@@ -11,39 +11,26 @@
 // 1 <= numRows <= 30
 
 /**
+ * Generates the first numRows of Pascal's triangle.
+ * 
  * @param {number} numRows
  * @return {number[][]}
+ * 
+ * Time complexity: O(n^2)
+ * Space complexity: O(n^2)
  */
+export function generate(numRows) {
+    const triangle = [];
 
-export default function generate(numRows) {
+    for (let i = 0; i < numRows; i++) {
+        triangle[i] = [];
+        triangle[i][0] = 1;
+        triangle[i][i] = 1;
 
-    let res = [];
-
-    if (numRows >= 1) 
-        res.push([1]);
-
-    if (numRows >= 2) 
-        res.push([1, 1]);
-
-    if (numRows > 2) {    
-
-        let i = 2;
-
-        while (i < numRows) {
-
-            let temp = [];
-
-                temp.push(1);
-
-                for (let j = 0; j < i - 1; j++)
-                        temp.push(Number(res[i - 1][j] + res[i - 1][j + 1])); 
-                
-                temp.push(1);
-
-            res.push(temp)
-
-        i++;
+        for (let j = 1; j < i; j++) {
+            triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
         }
     }
-    return res;
+
+    return triangle;
 };

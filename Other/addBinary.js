@@ -6,7 +6,19 @@
 // a and b consist only of '0' or '1' characters.
 // Each string does not contain leading zeros except for the zero itself.
 
-
+/**
+ * Recursively adds two binary strings and a carry bit together.
+ * 
+ * If the sum of the two bits plus the carry bit is 2, then the result is 0 and the carry bit is 1.
+ * If the sum of the two bits plus the carry bit is 3, then the result is 1 and the carry bit is 1.
+ * If the sum of the two bits plus the carry bit is 1, then the result is 1 and the carry bit is 0.
+ * If the sum of the two bits plus the carry bit is 0, then the result is 0 and the carry bit is 0.
+ * 
+ * @param {string} a - a binary string
+ * @param {string} b - a binary string
+ * @param {number} s - the carry bit (0 or 1)
+ * @return {string} the sum of the two binary strings and the carry bit
+ */
 const addOneDigit = (a, b, s) => {
 
     let sum = 0;
@@ -37,11 +49,16 @@ const addOneDigit = (a, b, s) => {
 
 
 /**
+ * Adds two binary strings and returns the sum as a binary string.
+ * 
  * @param {string} a
  * @param {string} b
  * @return {string}
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(n)
  */
-export default function addBinary(a,  b) {
+export function addBinary(a,  b) {
 
     if (a.length > b.length) {
         let n = a.length - b.length;

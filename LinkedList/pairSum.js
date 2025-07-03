@@ -1,3 +1,5 @@
+import { ListNode } from "./node/ListNode.js";
+
 // In a linked list of size n, where n is even, the ith node (0-indexed) 
 // of the linked list is known as the twin of the (n-1-i)th node, 
 // if 0 <= i <= (n / 2) - 1.
@@ -24,8 +26,11 @@
 /**
  * @param {ListNode} head
  * @return {number}
+ * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  */
-export default function pairSum(head){
+export function pairSum(head){
 
     let list = [];
 

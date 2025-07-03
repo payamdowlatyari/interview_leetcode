@@ -11,10 +11,15 @@
 // Follow up: Could you find an O(n + m) solution?
 
 /**
+ * Counts the number of negative numbers in a sorted 2D grid.
+ * 
  * @param {number[][]} grid
  * @return {number}
+ * 
+ * Time complexity: O(m * n)
+ * Space complexity: O(1)
  */
-export default function countNegatives(grid) {
+export function countNegatives(grid) {
     
     let count = 0;
 
@@ -24,6 +29,5 @@ export default function countNegatives(grid) {
         }
     }
 
-    console.log(Math.pow(2, 31))
     return count;
 };

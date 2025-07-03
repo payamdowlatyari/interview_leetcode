@@ -16,29 +16,26 @@
 // In this scenario, how would you change your code?
 
 /**
+ * Checks if s is a subsequence of t.
+ * * A subsequence of a string is a new string that is formed from the original string by 
+ * deleting some (can be none) of the characters without disturbing the relative positions 
+ * of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
+ *
  * @param {string} s
  * @param {string} t
  * @return {boolean}
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(1)
  */
-
-export default function isSubsequence(s, t) {
-
-    let tl = t.length;
-    let sl = s.length;
-
-    if (sl == 0) return true;
-
+export function isSubsequence(s, t) {
     let i = 0;
     let j = 0;
-
-    while (i < tl) {
-
-        if (t[i] == s[j]) j++;
-        
-        if (j > 0 && j == sl) return true;
-
+    while (j < s.length && i < t.length) {
+        if (t[i] === s[j]) {
+            j++;
+        }
         i++;
     }
-
-    return false;
+    return j === s.length;
 };

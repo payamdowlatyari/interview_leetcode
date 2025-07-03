@@ -14,108 +14,49 @@
  
 // Follow up: Could you use search pruning to make your solution faster with a larger board?
 
-const initialiseAux = (r, c) => {
-
-    let aux = [];
-
-    for (let i = 0; i < r; i++) {
-        aux[i] = [];
-        for (let j = 0; j < c; j++) {
-            aux[i][j] = 0;
-        }
-    }
-    return aux;
-}
-
-const nextLetter = (board, x, y, auxArray, word, n) => {
-
-    console.log('n ----- ' + n)
-
-    if (!word[n]) return true;
-
-    auxArray[x][y] = 1;
-
-    let exists = false;
-
-    console.log('board[x][y]: ' + board[x][y] + ' word[n]: ' + word[n]);
-    console.log(auxArray);
-    if (x < board.length - 1) {
-        console.log('board[x + 1][y]: ' + board[x + 1][y] + ' word[n]: ' + word[n]);
-        console.log('x: ' + (x + 1) + ' --- y: ' + y)
-
-        if (board[x + 1][y] == word[n] && auxArray[x + 1][y] == 0) {
-            auxArray[x + 1][y] = 1;
-            exists = nextLetter(board, x + 1, y, auxArray, word, n + 1);
-
-            console.log(exists);
-            if (!exists) 
-            auxArray[x + 1][y] = 0;
-        } 
-    }
-    if (x > 0) {
-        console.log('board[x - 1][y]: ' + board[x - 1][y] + ' word[n]: ' + word[n]);
-        console.log('x: ' + (x - 1) + ' --- y: ' + y)
-        if (board[x - 1][y] == word[n] && auxArray[x - 1][y] == 0) {
-            auxArray[x - 1][y] = 1;
-            exists = nextLetter(board, x - 1, y, auxArray, word, n + 1);
-            console.log(exists);
-            if (!exists) 
-            auxArray[x - 1][y] = 0;
-        } 
-    }
-    if (y < board[x].length - 1) {
-        console.log('board[x][y + 1]: ' + board[x][y + 1] + ' word[n]: ' + word[n]);
-        console.log('x: ' + x + ' --- y: ' + (y + 1))
-        if (board[x][y + 1] == word[n] && auxArray[x][y + 1] == 0) {
-            auxArray[x][y + 1] = 1;
-            exists = nextLetter(board, x, y + 1, auxArray, word, n + 1);
-            console.log(exists);
-            if (!exists) 
-            auxArray[x][y + 1] = 0;
-        } 
-    }
-    if (y > 0) {
-        console.log('board[x][y - 1]: ' + board[x][y - 1] + ' word[n]: ' + word[n]);
-        console.log('x: ' + x + ' --- y: ' + (y - 1))
-        if (board[x][y - 1] == word[n] && auxArray[x][y - 1] == 0) {
-            auxArray[x][y - 1] = 1;
-            exists = nextLetter(board, x, y - 1, auxArray, word, n + 1);
-            console.log(exists);
-            if (!exists) 
-            auxArray[x][y - 1] = 0;
-        } 
-    }
-
-    console.log(' end: ' + exists);
-    return exists;
-}
-
 /**
+ * Checks if a word exists in the given board.
+ * 
  * @param {character[][]} board
  * @param {string} word
  * @return {boolean}
+ * 
+ * Time complexity: O(4^(m*n))
+ * Space complexity: O(m*n)
  */
-export default function exist(board, word) {
+export function exist(board, word) {
 
-    let auxArray = initialiseAux(board.length, board[0].length);
-    console.log(auxArray);
+    let i = board.length;
+    let j = board[0].length
 
-    let i = 0; 
-    let j = 0;
+    function backtrack(x, y, n) {
 
-    while (i < board.length){
-        while (j < board[i].length) {
-            if (word[0] == board[i][j]) {
-                
-                if (nextLetter(board, i, j, auxArray, word, 1)) 
-                    return true;
-                
-                else 
-                    auxArray = initialiseAux(board.length, board[0].length);
-            } 
-            j++;
+        if (n === word.length) 
+            return true;
+
+        if (x < 0 || x >= i || y < 0 || y >= j || board[x][y] !== word[n])
+            return false;
+
+        let temp = board[x][y]
+        board[x][y] = '#'
+
+        for (const [dx, dy] of [[0, 1], [1, 0], [0, -1], [-1, 0]]) {
+            const nextX = x + dx;
+            const nextY = y + dy;
+
+            if (backtrack(nextX, nextY, n + 1)) 
+                return true
         }
-        i++;
+
+        board[x][y] = temp;
+        return false;
+    }
+
+    for (let x = 0; x < i; x++) {
+        for (let y = 0; y < j; y++) { 
+            if (backtrack(x, y, 0)) 
+                return true
+        }
     }
 
     return false;

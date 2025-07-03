@@ -10,10 +10,18 @@
 // s consists only of printable ASCII characters.
 
 /**
+ * Checks if s is a palindrome.
+ * * A phrase is a palindrome if, after converting all uppercase letters into lowercase letters
+ * and removing all non-alphanumeric characters, it reads the same forward and backward.
+ * Alphanumeric characters include letters and numbers.
+ * 
  * @param {string} s
  * @return {boolean}
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(n)
  */
-export default function isPalindrome(s) {
+export function isPalindrome(s) {
 
     let temp = s.replace(/[^a-z0-9]/gi, '').toLowerCase();
     

@@ -1,3 +1,5 @@
+import { ListNode } from "./node/ListNode.js";
+
 // Given head, the head of a linked list, 
 // determine if the linked list has a cycle in it.
 // There is a cycle in a linked list if there is some node in the list 
@@ -14,11 +16,15 @@
 // pos is -1 or a valid index in the linked-list.
 
 // Follow up: Can you solve it using O(1) (i.e. constant) memory?
+
 /**
  * @param {ListNode} head
  * @return {boolean}
+ * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  */
-export default function hasCycle(head) {
+export function hasCycle(head) {
 
     if (!head) return false;
     

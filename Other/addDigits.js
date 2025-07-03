@@ -8,10 +8,15 @@
 // Follow up: Could you do it without any loop/recursion in O(1) runtime?
 
 /**
+ * Adds the digits of a number until it is a single digit.
+ * 
  * @param {number} num
  * @return {number}
+ * 
+ * Time complexity: O(1)
+ * Space complexity: O(1)
  */
-export default function addDigits(num){
+export function addDigits(num){
     
     let sum = 0;
 

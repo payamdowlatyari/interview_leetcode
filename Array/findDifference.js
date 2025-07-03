@@ -10,11 +10,16 @@
 // -1000 <= nums1[i], nums2[i] <= 1000
 
 /**
+ * Finds the distinct integers in two arrays that are not present in the other.
+ * 
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number[][]}
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(n)
  */
-export default function findDifference(nums1, nums2) {
+export function findDifference(nums1, nums2) {
   
     let returnArray1 = [];
     let returnArray2 = [];
