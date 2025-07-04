@@ -1,4 +1,4 @@
-import { topKFrequent } from "./topKFrequent.js";
+import { topKFrequent } from "./topKFrequent";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

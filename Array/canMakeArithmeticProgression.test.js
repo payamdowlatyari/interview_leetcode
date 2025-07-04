@@ -1,4 +1,4 @@
-import { canMakeArithmeticProgression } from "./canMakeArithmeticProgression.js";
+import { canMakeArithmeticProgression } from "./canMakeArithmeticProgression";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
@@ -13,6 +13,14 @@ import { expect, test, describe } from "@jest/globals";
 // Input: arr = [1,2,4]
 // Output: false
 // Explanation: There is no way to reorder the elements to obtain an arithmetic progression.
+
+// Example 3:
+
+// Input: arr = [-68,-96,-12,-40,16]
+// Output: true
+// Explanation: We can reorder the elements as [-68,-40,-12,-96,-16] 
+// or [-68,-40,-12,-16,-96] with differences 12 and -28 respectively, 
+// between each consecutive elements.
 
 describe('Describe Cases', () => { 
 

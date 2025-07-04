@@ -1,4 +1,4 @@
-import { spiralOrder } from "./spiralOrder.js";
+import { spiralOrder } from "./spiralOrder";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

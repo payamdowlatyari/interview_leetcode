@@ -1,4 +1,4 @@
-import { findPeakElement } from "./findPeakElement.js";
+import { findPeakElement } from "./findPeakElement";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

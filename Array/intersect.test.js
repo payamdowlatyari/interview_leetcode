@@ -1,4 +1,4 @@
-import { intersect } from "./intersect.js";
+import { intersect } from "./intersect";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

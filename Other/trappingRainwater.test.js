@@ -1,4 +1,5 @@
-import { trap } from "./trappingRainwater.js"
+import { trap } from "./trappingRainwater";
+import { expect, it, describe } from "@jest/globals";
 
 // Example 1:
 // Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]

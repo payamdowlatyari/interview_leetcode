@@ -1,4 +1,5 @@
-import { isFascinating } from "./isFascinating.js";
+import { isFascinating } from "./isFascinating";
+import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
 

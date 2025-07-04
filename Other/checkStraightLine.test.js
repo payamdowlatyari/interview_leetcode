@@ -1,4 +1,5 @@
-import { checkStraightLine } from "./checkStraightLine.js";
+import { checkStraightLine } from "./checkStraightLine";
+import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
 

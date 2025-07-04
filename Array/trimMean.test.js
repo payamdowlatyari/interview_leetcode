@@ -1,4 +1,4 @@
-import { trimMean } from "./trimMean.js";
+import { trimMean } from "./trimMean";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

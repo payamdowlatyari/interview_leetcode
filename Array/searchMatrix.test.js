@@ -1,4 +1,4 @@
-import { searchMatrix } from "./searchMatrix.js";
+import { searchMatrix } from "./searchMatrix";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

@@ -1,4 +1,4 @@
-import { gcdOfStrings } from "./gcdOfStrings.js";
+import { gcdOfStrings } from "./gcdOfStrings";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

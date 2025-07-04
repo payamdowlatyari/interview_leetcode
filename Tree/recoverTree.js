@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode.js";
+import { TreeNode } from "./node/TreeNode";
 
 // You are given the root of a binary search tree (BST), where the values of
 // exactly two nodes of the tree were swapped by mistake.

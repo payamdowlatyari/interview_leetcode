@@ -1,4 +1,4 @@
-import { isAnagram } from "./anagram.js";
+import { isAnagram } from "./anagram";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

@@ -1,4 +1,4 @@
-import { isGood } from "./isGood.js";
+import { isGood } from "./isGood";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

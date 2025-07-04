@@ -1,4 +1,4 @@
-import { findDifference } from "./findDifference.js";
+import { findDifference } from "./findDifference";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

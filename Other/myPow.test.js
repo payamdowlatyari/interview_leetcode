@@ -1,4 +1,5 @@
-import { myPow } from "./myPow.js";
+import { myPow } from "./myPow";
+import { expect, it, describe } from "@jest/globals";
 
 // Example 1:
 // Input: x = 0.00001, n = 2147483647

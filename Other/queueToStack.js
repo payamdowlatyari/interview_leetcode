@@ -102,15 +102,6 @@ MyStack.prototype.empty = function() {
     return this.queue1.length === 0 && this.queue2.length === 0;
 };
 
-/** 
- * Your MyStack object will be instantiated and called as such:
- * var obj = new MyStack()
- * obj.push(x)
- * var param_2 = obj.pop()
- * var param_3 = obj.top()
- * var param_4 = obj.empty()
- */
-
 // Impelement a Queue using two Stacks
 // Implement a first-in-first-out (FIFO) queue using only two stacks.
 // The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).

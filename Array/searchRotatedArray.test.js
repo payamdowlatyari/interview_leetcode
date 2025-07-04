@@ -1,4 +1,4 @@
-import { search } from "./searchRotatedArray.js";
+import { search } from "./searchRotatedArray";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

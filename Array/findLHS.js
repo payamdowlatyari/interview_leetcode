@@ -24,7 +24,7 @@
  */
 export function findLHS(nums) {
 
-    let sortedNums = nums.sort((a, b) => {return a - b})
+    let sortedNums = nums.sort((a, b) => a - b);
     let i = 0, j = 1
     let max = 0
 

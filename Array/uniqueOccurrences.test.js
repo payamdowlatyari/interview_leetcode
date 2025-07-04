@@ -1,4 +1,4 @@
-import { uniqueOccurrences } from "./uniqueOccurrences.js";
+import { uniqueOccurrences } from "./uniqueOccurrences";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

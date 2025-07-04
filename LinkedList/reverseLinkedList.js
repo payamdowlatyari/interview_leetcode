@@ -1,4 +1,4 @@
-import { ListNode } from "./node/ListNode.js";
+import { ListNode } from "./node/ListNode";
 
 // Reverse Linked List II
 

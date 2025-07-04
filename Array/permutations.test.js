@@ -1,4 +1,4 @@
-import { allPermutations } from "./permutations.js";
+import { allPermutations } from "./permutations";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

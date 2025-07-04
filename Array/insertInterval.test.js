@@ -1,4 +1,4 @@
-import { insert } from "./insertInterval.js";
+import { insert } from "./insertInterval";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

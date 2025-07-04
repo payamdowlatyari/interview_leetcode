@@ -11,11 +11,19 @@
  * @param {Array} items
  * @return {Array}
  *
+ * Time complexity: O(n * 2^n)
+ * Space complexity: O(n)
  */
 export function allCombinations(items) {
 
    const results = [];
 
+  /**
+   * Recursively generates all combinations of the given items starting from a specific index.
+   * 
+   * @param {number} start - The starting index to generate combinations from.
+   * @param {Array} combination - The current combination being built.
+   */
    function backtrack(start, combination) {
        if (combination.length === items.length) {
            results.push([...combination]);
@@ -31,5 +39,5 @@ export function allCombinations(items) {
 
    backtrack(0, []);
    return results;
-
+   
 };

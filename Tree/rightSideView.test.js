@@ -1,5 +1,6 @@
-import { rightSideView } from "./rightSideView.js";
-import { TreeNode } from "./node/TreeNode.js";
+import { rightSideView } from "./rightSideView";
+import { TreeNode } from "./node/TreeNode";
+import { expect, test, describe } from '@jest/globals';
 
 // Example 1:
 //            1                           

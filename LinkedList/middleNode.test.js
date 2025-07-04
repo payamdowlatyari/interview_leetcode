@@ -1,5 +1,6 @@
-import { middleNode } from "./middleNode.js";
-import { ListNode } from "./node/ListNode.js";
+import { middleNode } from "./middleNode";
+import { ListNode } from "./node/ListNode";
+import { describe, expect, test } from "@jest/globals";
 
 // Example 1:
 

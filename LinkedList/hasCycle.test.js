@@ -1,5 +1,6 @@
-import { ListNode } from "./node/ListNode.js";
-import { hasCycle } from "./hasCycle.js";
+import { ListNode } from "./node/ListNode";
+import { hasCycle } from "./hasCycle";
+import { describe, expect, test } from "@jest/globals";
 
 // Example 1:
 

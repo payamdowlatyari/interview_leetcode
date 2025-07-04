@@ -1,5 +1,6 @@
-import { TreeNode } from "./node/TreeNode.js";
-import { isSymmetric } from "./isSymmetricTree.js";
+import { TreeNode } from "./node/TreeNode";
+import { isSymmetric } from "./isSymmetricTree";
+import { expect, test, describe } from '@jest/globals';
 
 // Example 1:
 // Input: root = [1,2,2,3,4,4,3]

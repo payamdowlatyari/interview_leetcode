@@ -1,4 +1,4 @@
-import { countNegatives } from "./countNegatives.js";
+import { countNegatives } from "./countNegatives";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

@@ -1,4 +1,4 @@
-import { generate } from "./pascalTriangle.js";
+import { generate } from "./pascalTriangle";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

@@ -1,4 +1,4 @@
-import { canPlaceFlowers } from "./canPlaceFlowers.js";
+import { canPlaceFlowers } from "./canPlaceFlowers";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

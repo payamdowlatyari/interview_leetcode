@@ -1,4 +1,5 @@
-import { search } from "./binarySearch.js";
+import { search } from "./binarySearch";
+import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
 

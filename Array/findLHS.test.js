@@ -1,4 +1,4 @@
-import { findLHS } from "./findLHS.js";
+import { findLHS } from "./findLHS";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

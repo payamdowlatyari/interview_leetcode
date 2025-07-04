@@ -1,4 +1,4 @@
-import { ParkingSystem } from "./parkingLot.js";
+import { ParkingSystem } from "./parkingLot";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
@@ -15,6 +15,36 @@ import { expect, test, describe } from "@jest/globals";
 // parkingSystem.addCar(2); // return true because there is 1 available slot for a medium car
 // parkingSystem.addCar(3); // return false because there is no available slot for a small car
 // parkingSystem.addCar(1); // return false because there is no available slot for a big car. It is already occupied.
+
+// Example 2:
+
+// Input
+// ["ParkingSystem", "addCar", "addCar", "addCar", "addCar"]
+// [[0, 0, 1], [1], [2], [3], [1]]
+// Output
+// [null, false, false, true, false]
+
+// Explanation
+// ParkingSystem parkingSystem = new ParkingSystem(0, 0, 1);
+// parkingSystem.addCar(1); // return false because there is no available slot for a big car
+// parkingSystem.addCar(2); // return false because there is no available slot for a medium car
+// parkingSystem.addCar(3); // return true because there is 1 available slot for a small car
+// parkingSystem.addCar(1); // return false because there is no available slot for a big car. It is already occupied.
+
+// Example 3:
+
+// Input
+// ["ParkingSystem", "addCar", "addCar", "addCar", "addCar"]
+// [[1, 1, 1], [1], [2], [3], [2]]
+// Output
+// [null, true, true, false, false]
+
+// Explanation
+// ParkingSystem parkingSystem = new ParkingSystem(1, 1, 1);
+// parkingSystem.addCar(1); // return true because there is 1 available slot for a big car
+// parkingSystem.addCar(2); // return true because there is 1 available slot for a medium car
+// parkingSystem.addCar(3); // return true because there is 1 available slot for a small car
+// parkingSystem.addCar(2); // return false because there is no available slot for a medium car. It is already occupied.
 
 describe('ParkingSystem', () => {
 

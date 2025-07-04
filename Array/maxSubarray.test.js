@@ -1,4 +1,4 @@
-import { maxSubArray } from "./maxSubarray.js";
+import { maxSubArray } from "./maxSubarray";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

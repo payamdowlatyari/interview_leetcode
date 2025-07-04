@@ -1,4 +1,5 @@
-import { compose } from "./compose.js";
+import { compose } from "./compose";
+import { expect, it, describe } from "@jest/globals";
 
 // Example 1:
 // Input: functions = [x => x + 1, x => x * x, x => 2 * x], x = 4

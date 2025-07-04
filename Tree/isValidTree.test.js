@@ -1,5 +1,5 @@
-import { TreeNode } from "./node/TreeNode.js";
-import { isValidBST } from "./isValidTree.js";
+import { TreeNode } from "./node/TreeNode";
+import { isValidBST } from "./isValidTree";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

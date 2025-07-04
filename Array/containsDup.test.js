@@ -1,4 +1,4 @@
-import { containsDup } from './containsDup.js'
+import { containsDup } from './containsDup';
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

@@ -1,4 +1,4 @@
-import { singleNumber } from "./singleNumber.js";
+import { singleNumber } from "./singleNumber";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

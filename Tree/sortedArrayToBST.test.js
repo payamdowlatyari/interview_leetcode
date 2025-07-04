@@ -1,4 +1,4 @@
-import { sortedArrayToBST } from "./sortedArrayToBST.js";
+import { sortedArrayToBST } from "./sortedArrayToBST";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

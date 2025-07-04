@@ -1,4 +1,4 @@
-import { reverseWords } from "./reverseWords2.js";
+import { reverseWords } from "./reverseWords2";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

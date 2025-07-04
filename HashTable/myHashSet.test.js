@@ -1,4 +1,5 @@
-import { HashTable } from "./myHashSet.js";
+import { HashTable } from "./myHashSet";
+import { expect, test, describe, beforeEach } from "@jest/globals";
 
 // Example 1:
 

@@ -1,6 +1,7 @@
-import { swapPairs } from "./swapPairs.js";
-import { ListNode } from "./node/ListNode.js";
-import { linkedListToArray } from "./helpers/linkedListToArray.js";
+import { swapPairs } from "./swapPairs";
+import { ListNode } from "./node/ListNode";
+import { linkedListToArray } from "./helpers/linkedListToArray";
+import { describe, expect, test } from "@jest/globals";
 
 // Example 1:
 // Input: head = [1,2,3,4]

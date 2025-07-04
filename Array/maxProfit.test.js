@@ -1,4 +1,4 @@
-import { maxProfit } from "./maxProfit.js";
+import { maxProfit } from "./maxProfit";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

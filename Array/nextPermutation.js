@@ -22,7 +22,7 @@
 
 /** 
  * Reverses the sub-array of nums starting from index 'start' to the end of the array.
- * 
+ *
  * @param {number[]} nums - The array to be modified.
  * @param {number} start - The starting index from which to reverse the sub-array.
  */

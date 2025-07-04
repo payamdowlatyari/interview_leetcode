@@ -1,4 +1,4 @@
-import { moveZeroes } from "./moveZeroes.js";
+import { moveZeroes } from "./moveZeroes";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

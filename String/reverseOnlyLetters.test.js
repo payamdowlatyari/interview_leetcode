@@ -1,4 +1,4 @@
-import { reverseOnlyLetters } from "./reverseOnlyLetters.js";
+import { reverseOnlyLetters } from "./reverseOnlyLetters";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

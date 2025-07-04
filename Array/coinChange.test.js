@@ -1,4 +1,4 @@
- import { coinChange } from "./coinChange.js";
+ import { coinChange } from "./coinChange";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

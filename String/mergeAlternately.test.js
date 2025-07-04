@@ -1,4 +1,4 @@
-import { mergeAlternately } from "./mergeAlternately.js";
+import { mergeAlternately } from "./mergeAlternately";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

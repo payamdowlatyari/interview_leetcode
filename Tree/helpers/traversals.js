@@ -1,4 +1,4 @@
-import { TreeNode } from "../node/TreeNode.js";
+import { TreeNode } from "../node/TreeNode";
 
 /**
  * Converts a binary tree to an array using pre-order traversal.
@@ -11,12 +11,12 @@ import { TreeNode } from "../node/TreeNode.js";
  * Time complexity: O(n) where n is the number of nodes in the tree
  * Space complexity: O(n) where n is the number of nodes in the tree
  */
-export function preOrderTravarsal(root) {
+export function preOrderTraversal(root) {
     if (!root) return [];
 
     const result = [root.val];
-    result.push(...preOrderTravarsal(root.left));
-    result.push(...preOrderTravarsal(root.right));
+    result.push(...preOrderTraversal(root.left));
+    result.push(...preOrderTraversal(root.right));
 
     return result;
 }
@@ -126,4 +126,40 @@ export function depthFirstTraversal(tree) {
         }
     }
     return result;
+}
+
+/**
+ * Draws a binary tree in a matrix-like representation and logs it to the console.
+ * The tree is visualized in a 2D grid where each node is placed in a specific 
+ * position based on its depth and horizontal distance from the root.
+ * 
+ * @example 
+ *       2
+ *      / \
+ *     1   3
+ *    / \
+ *   4   5
+ *  / \ / \
+ * 6  7 8  9
+ *
+ * @param {TreeNode} tree - The root node of the binary tree to be drawn.
+ * @param {number} len - The length of the grid to draw the tree in.
+ * 
+ * Note: This function assumes the tree's height and width fit within a 10x10 grid.
+ * Nodes are represented by their values, and their positions are adjusted to 
+ * visualize the tree's structure.
+ */
+export function drawTree(tree, len = 10) {
+    const drawMatrix = Array.from({ length: len }, () => Array(len).fill(' '));
+
+    function drawNode(node, x, y) {
+        if (!node || y < 0 || y >= drawMatrix.length || x < 0 || x >= drawMatrix[0].length) return;
+        drawMatrix[y][x] = node.val;
+        drawNode(node.left, x - 1, y + 1);
+        drawNode(node.right, x + 1, y + 1);
+    }
+
+    drawNode(tree, 4, 0); // Start drawing from a central position
+
+    drawMatrix.forEach(row => console.log(row.join(' ')));
 }

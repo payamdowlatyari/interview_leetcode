@@ -1,6 +1,7 @@
-import { invertTree } from "./invertTree.js";
-import { TreeNode } from "./node/TreeNode.js";
-import { breadthFirstTraversal } from "./helpers/traversals.js";
+import { invertTree } from "./invertTree";
+import { TreeNode } from "./node/TreeNode";
+import { breadthFirstTraversal } from "./helpers/traversals";
+import { expect, test, describe } from '@jest/globals';
 
 // Example 1:
 

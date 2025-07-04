@@ -1,4 +1,4 @@
-import { findMaxAverage } from "./findMaxAverage.js";
+import { findMaxAverage } from "./findMaxAverage";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
@@ -9,6 +9,10 @@ import { expect, test, describe } from "@jest/globals";
 // Example 2:
 // Input: nums = [5], k = 1
 // Output: 5.00000
+
+// Example 3:
+// Input: nums = [4,0,4,3,3], k = 5
+// Output: 2.80000
 
 describe('Describe Cases', () => { 
 

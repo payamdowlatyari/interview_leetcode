@@ -1,4 +1,5 @@
-import { removeTrailingZeros } from "./removeTrailingZeros.js";
+import { removeTrailingZeros } from "./removeTrailingZeros";
+import { expect, it, describe } from "@jest/globals";
 
 // Example 1:
 

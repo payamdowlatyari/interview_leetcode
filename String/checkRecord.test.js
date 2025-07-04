@@ -1,4 +1,4 @@
-import { checkRecord } from "./checkRecord.js";
+import { checkRecord } from "./checkRecord";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

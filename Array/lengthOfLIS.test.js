@@ -1,4 +1,4 @@
-import { lengthOfLIS } from "./lengthOfLIS.js";
+import { lengthOfLIS } from "./lengthOfLIS";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

@@ -1,4 +1,4 @@
-import { largestAltitude } from "./largestAltitude.js";
+import { largestAltitude } from "./largestAltitude";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

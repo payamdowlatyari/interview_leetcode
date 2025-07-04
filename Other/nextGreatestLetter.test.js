@@ -1,4 +1,5 @@
-import { nextGreatestLetter } from "./nextGreatestLetter.js";
+import { nextGreatestLetter } from "./nextGreatestLetter";
+import { expect, describe, it } from "@jest/globals";
 
 // Example 1:
 

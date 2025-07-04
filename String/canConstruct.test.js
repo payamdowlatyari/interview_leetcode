@@ -1,4 +1,4 @@
-import { canConstruct } from "./canConstruct.js";
+import { canConstruct } from "./canConstruct";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

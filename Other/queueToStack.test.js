@@ -1,4 +1,5 @@
-import { MyStack, MyQueue } from "./queueToStack.js";
+import { MyStack, MyQueue } from "./queueToStack";
+import { describe, expect, test } from "@jest/globals";
 
 // Example 1:
 // Input
@@ -6,6 +7,13 @@ import { MyStack, MyQueue } from "./queueToStack.js";
 // [[], [1], [2], [], [], []]
 // Output
 // [null, null, null, 2, 2, false]
+
+// Example 2:
+// Input
+// ["MyQueue", "push", "push", "peek", "pop", "empty"]
+// [[], [1], [2], [], [], []]
+// Output
+// [null, null, null, 1, 1, false]
 
 describe('Describe Cases MyStack', () => { 
 

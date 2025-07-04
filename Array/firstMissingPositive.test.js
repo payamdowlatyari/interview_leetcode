@@ -1,4 +1,4 @@
-import { firstMissingPositive } from "./firstMissingPositive.js";
+import { firstMissingPositive } from "./firstMissingPositive";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

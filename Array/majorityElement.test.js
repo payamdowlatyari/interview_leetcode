@@ -1,4 +1,4 @@
-import { majorityElement } from "./majorityElement.js";
+import { majorityElement } from "./majorityElement";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

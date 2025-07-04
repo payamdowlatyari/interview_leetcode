@@ -1,5 +1,5 @@
-import { TreeNode } from "./node/TreeNode.js";
-import { minDepth } from "./minDepthTree.js";
+import { TreeNode } from "./node/TreeNode";
+import { minDepth } from "./minDepthTree";
 import { describe, expect, test } from '@jest/globals';
 
 // Example 1:

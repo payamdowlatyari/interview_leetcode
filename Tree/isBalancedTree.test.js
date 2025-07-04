@@ -1,5 +1,5 @@
-import { isBalanced } from "./isBalancedTree.js";
-import { TreeNode } from "./node/TreeNode.js";
+import { isBalanced } from "./isBalancedTree";
+import { TreeNode } from "./node/TreeNode";
 import { expect, test, describe } from "@jest/globals";
 
 // Given a binary tree, determine if it is height-balanced.

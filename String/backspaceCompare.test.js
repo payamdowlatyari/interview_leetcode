@@ -1,4 +1,4 @@
-import { backspaceCompare } from "./backspaceCompare.js";
+import { backspaceCompare } from "./backspaceCompare";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

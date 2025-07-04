@@ -1,4 +1,4 @@
-import { nextPermutation } from "./nextPermutation.js";
+import { nextPermutation } from "./nextPermutation";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

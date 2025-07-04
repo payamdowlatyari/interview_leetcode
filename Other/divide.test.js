@@ -1,4 +1,5 @@
-import { divide } from "./divide.js";
+import { divide } from "./divide";
+import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
 

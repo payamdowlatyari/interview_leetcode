@@ -1,15 +1,16 @@
 /**
- * Definition for a binary tree node.
+ * Definition for a binary tree node. 
+ * @example
+ * const node = new TreeNode(1, null, null);
+ * node.val; // 1
+ * node.left; // null
+ * node.right; // null
  *
- * @class TreeNode
- * @constructor
  * @param {number} val - The value of the node. Defaults to 0 if not provided.
  * @param {TreeNode|null} left - The left child of the node. Defaults to null if not provided.
  * @param {TreeNode|null} right - The right child of the node. Defaults to null if not provided.
- * 
  */
 class TreeNode {
-    
     /**
      * Constructs a new TreeNode.
      */

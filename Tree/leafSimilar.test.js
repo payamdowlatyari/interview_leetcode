@@ -1,5 +1,5 @@
-import { leafSimilar } from "./leafSimilar.js";
-import { TreeNode } from "./node/TreeNode.js";
+import { leafSimilar } from "./leafSimilar";
+import { TreeNode } from "./node/TreeNode";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

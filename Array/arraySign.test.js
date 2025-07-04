@@ -1,4 +1,4 @@
-import { arraySign } from "./arraySign.js";
+import { arraySign } from "./arraySign";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

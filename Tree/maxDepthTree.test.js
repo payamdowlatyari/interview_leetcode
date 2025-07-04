@@ -1,5 +1,6 @@
-import { maxDepth } from "./maxDepthTree.js";
-import { TreeNode } from "./node/TreeNode.js";
+import { maxDepth } from "./maxDepthTree";
+import { TreeNode } from "./node/TreeNode";
+import { expect, test, describe } from '@jest/globals';
 
 // Example 1:
 

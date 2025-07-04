@@ -9,17 +9,17 @@
 // -104 <= nums[i] <= 104
 
 /**
+ * Find the maximum sum of min(ai, bi) for all pairs (ai, bi).
+ * 
  * @param {number[]} nums
  * @return {number}
+ * 
+ * Time complexity: O(n log n)
+ * Space complexity: O(1)
  */
 export function arrayPairSum(nums) {
     
-    let maxSum = 0
-    let sorted = nums.sort((a, b) => {return a - b})
+    nums.sort((a, b) => a - b);
 
-    for (let i = 0; i < sorted.length - 1; i += 2) {
-        maxSum += (Math.min(sorted[i], sorted[i + 1]))
-    }
-
-    return maxSum
+    return nums.reduce((acc, _, i) => i % 2 === 0 ? acc + nums[i] : acc, 0);
 };

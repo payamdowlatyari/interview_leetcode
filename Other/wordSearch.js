@@ -29,6 +29,14 @@ export function exist(board, word) {
     let i = board.length;
     let j = board[0].length
 
+    /**
+     * Attempts to find the word in the board starting from position (x, y) and character index n.
+     * 
+     * @param {number} x - The current row index in the board.
+     * @param {number} y - The current column index in the board.
+     * @param {number} n - The current index in the word being matched.
+     * @returns {boolean} - Returns true if the word can be constructed from the board from this position, false otherwise.
+     */
     function backtrack(x, y, n) {
 
         if (n === word.length) 

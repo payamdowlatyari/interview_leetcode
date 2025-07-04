@@ -19,7 +19,7 @@
  */
 export function canMakeArithmeticProgression(arr){
 
-    arr.sort((a, b) => { return a - b });
+    arr.sort((a, b) => a - b);
 
     let diff = arr[1] - arr[0];
 

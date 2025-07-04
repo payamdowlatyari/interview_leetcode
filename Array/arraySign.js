@@ -14,6 +14,8 @@
 // -100 <= nums[i] <= 100
 
 /**
+ * Find the sign of the product of all elements in the array.
+ * 
  * @param {number[]} nums
  * @return {number}
  * 

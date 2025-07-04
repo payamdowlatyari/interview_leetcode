@@ -1,4 +1,5 @@
-import { exist } from "./wordSearch.js";
+import { exist } from "./wordSearch";
+import { expect, describe, it } from "@jest/globals";
 
 // Example 1:
 

@@ -1,6 +1,7 @@
-import { diameterOfBinaryTree } from "./diameterOfBinaryTree.js";
-import { breadthFirstTraversal } from "./helpers/traversals.js";
-import { TreeNode } from "./node/TreeNode.js";
+import { diameterOfBinaryTree } from "./diameterOfBinaryTree";
+import { breadthFirstTraversal } from "./helpers/traversals";
+import { TreeNode } from "./node/TreeNode";
+import { expect, test, describe } from '@jest/globals';
 
 // Example 1:
 // Input: root = [1,2,3,4,5]

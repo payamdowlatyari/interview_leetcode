@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode.js";
+import { TreeNode } from "./node/TreeNode";
 
 // Given a binary tree, determine if it is height-balanced.
 

@@ -1,4 +1,4 @@
-import { isPalindrome } from "./isPalindrome.js";
+import { isPalindrome } from "./isPalindrome";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

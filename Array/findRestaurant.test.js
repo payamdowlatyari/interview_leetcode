@@ -1,4 +1,4 @@
-import { findRestaurant } from "./findRestaurant.js";
+import { findRestaurant } from "./findRestaurant";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

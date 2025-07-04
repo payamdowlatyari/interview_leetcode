@@ -1,4 +1,4 @@
-import { twoSum } from "./twoSum.js";
+import { twoSum } from "./twoSum";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

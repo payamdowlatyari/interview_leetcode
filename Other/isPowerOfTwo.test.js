@@ -1,4 +1,5 @@
-import { isPowerOfTwo } from "./isPowerOfTwo.js";
+import { isPowerOfTwo } from "./isPowerOfTwo";
+import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
 

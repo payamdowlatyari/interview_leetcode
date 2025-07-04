@@ -1,4 +1,4 @@
-import { arrayPairSum } from "./arrayPairSum.js";
+import { arrayPairSum } from "./arrayPairSum";
  import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

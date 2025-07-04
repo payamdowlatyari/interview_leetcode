@@ -1,4 +1,4 @@
-import { isIsomorphic } from "./isIsomorphic.js";
+import { isIsomorphic } from "./isIsomorphic";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

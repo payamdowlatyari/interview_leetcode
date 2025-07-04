@@ -1,4 +1,4 @@
-import { reorganizeString } from "./reorganize.js";
+import { reorganizeString } from "./reorganize";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

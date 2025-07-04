@@ -1,5 +1,6 @@
-import { pairSum } from "./pairSum.js";
-import { ListNode } from "./node/ListNode.js";
+import { pairSum } from "./pairSum";
+import { ListNode } from "./node/ListNode";
+import { describe, expect, test } from "@jest/globals";
 
 // Example 1:
 

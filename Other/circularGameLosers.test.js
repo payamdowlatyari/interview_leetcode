@@ -1,4 +1,5 @@
-import { circularGameLosers } from "./circularGameLosers.js";
+import { circularGameLosers } from "./circularGameLosers";
+import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
 

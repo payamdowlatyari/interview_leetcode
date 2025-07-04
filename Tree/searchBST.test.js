@@ -1,5 +1,5 @@
-import { searchBST } from "./searchBST.js";
-import  { TreeNode }  from "./node/TreeNode.js";
+import { searchBST } from "./searchBST";
+import  { TreeNode }  from "./node/TreeNode";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

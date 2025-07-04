@@ -1,6 +1,7 @@
-import { reverseBetween } from "./reverseLinkedList.js";
-import { ListNode } from "./node/ListNode.js";
-import { linkedListToArray } from "./helpers/linkedListToArray.js";
+import { reverseBetween } from "./reverseLinkedList";
+import { ListNode } from "./node/ListNode";
+import { linkedListToArray } from "./helpers/linkedListToArray";
+import { describe, expect, test } from "@jest/globals";
 
 // Example 1:
 // Input: head = [1,2,3,4,5], left = 2, right = 4

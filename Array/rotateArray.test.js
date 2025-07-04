@@ -1,4 +1,4 @@
-import { rotateArray } from "./rotateArray.js";
+import { rotateArray } from "./rotateArray";
 import { describe, test, expect } from '@jest/globals';
 
 // Example 1:

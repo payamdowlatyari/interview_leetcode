@@ -1,4 +1,5 @@
-import { addDigits } from "./addDigits.js";
+import { addDigits } from "./addDigits";
+import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
 

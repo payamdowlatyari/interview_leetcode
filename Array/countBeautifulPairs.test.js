@@ -1,4 +1,4 @@
-import { countBeautifulPairs } from "./countBeautifulPairs.js";
+import { countBeautifulPairs } from "./countBeautifulPairs";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

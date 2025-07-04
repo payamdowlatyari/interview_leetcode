@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode.js";
+import { TreeNode } from "./node/TreeNode";
 
 // Diameter of Binary Tree
 
@@ -27,6 +27,13 @@ export function diameterOfBinaryTree(root) {
     
     let diameter = 0;
 
+    /**
+     * Calculates the height of a binary tree.
+     * This function is used in the calculation of the diameter of the tree.
+     * It uses a recursive approach to calculate the height of the tree.
+     * @param {TreeNode} node - The current node to calculate the height of
+     * @return {number} The height of the subtree with node as the root.
+     */
     const height = (node) => {
         if (node === null) return 0;
     

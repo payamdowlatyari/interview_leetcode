@@ -14,6 +14,13 @@ export function allPermutations (items) {
 
       let results = [];
     
+    /**
+     * Recursively generates all permutations of the given array.
+     * 
+     * @param {Array} arr The array to generate permutations for
+     * @param {Array} memo The accumulated permutations
+     * @return {Array} The array of all permutations
+     */
       function permute (arr, memo) {
     
         var cur, memo = memo || [];

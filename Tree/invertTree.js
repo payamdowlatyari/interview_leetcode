@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode.js";
+import { TreeNode } from "./node/TreeNode";
 
 // Given the root of a binary tree, invert the tree, and return its root.
 

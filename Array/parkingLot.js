@@ -18,18 +18,23 @@
 // At most 1000 calls will be made to addCar
 
 /**
- * @param {number} big
- * @param {number} medium
- * @param {number} small
+ * Represents a parking system with different types of parking spaces.
+ * 
+ * @param {number} big - The number of big slots available.
+ * @param {number} medium - The number of medium slots available.
+ * @param {number} small - The number of small slots available.
  */
 export class ParkingSystem {
+    /**
+     * Creates a ParkingSystem object.
+     */
     constructor(big, medium, small) {
        this.slots = [big, medium, small]
     }
     
     /**
-     * @param {number} carType
-     * @return {boolean}
+     * @param {number} carType - The type of car to add to the parking lot.
+     * @return {boolean} True if the car can be added to the parking lot, false otherwise.
      */
     addCar(carType) {
 
@@ -40,14 +45,11 @@ export class ParkingSystem {
         return true
     }
 
-
+    /**
+     * Retrieves the current number of available slots for each car type.
+     * @return {number[]} An array containing the number of available big, medium, and small slots respectively.
+     */
     getSlots() {
         return this.slots;
     }
 };
-
-/** 
- * Your ParkingSystem object will be instantiated and called as such:
- * var obj = new ParkingSystem(big, medium, small)
- * var param_1 = obj.addCar(carType)
- */

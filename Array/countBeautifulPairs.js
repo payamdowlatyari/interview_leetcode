@@ -14,13 +14,15 @@
 // 1 <= nums[i] <= 9999
 // nums[i] % 10 != 0
 
-
 /**
  * Calculates the greatest common divisor (GCD) of two integers using the Euclidean algorithm.
  * 
  * @param {number} x - The first integer.
  * @param {number} y - The second integer.
  * @return {number} - The greatest common divisor of x and y.
+ * 
+ * Time complexity: O(log(min(x, y)))
+ * Space complexity: O(1)
  */
 const gcd = (x, y) => {
     if (!y) {

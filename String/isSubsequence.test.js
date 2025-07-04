@@ -1,4 +1,4 @@
-import { isSubsequence } from "./isSubsequence.js";
+import { isSubsequence } from "./isSubsequence";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

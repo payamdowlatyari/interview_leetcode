@@ -1,4 +1,5 @@
-import { maxProduct } from "./maxProduct.js";
+import { maxProduct } from "./maxProduct";
+import { expect, it, describe } from "@jest/globals";
 
 // Example 1:
 

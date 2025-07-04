@@ -1,6 +1,7 @@
-import { reverseList } from "./reverseList.js";
-import { ListNode } from "./node/ListNode.js";
-import { linkedListToArray } from "./helpers/linkedListToArray.js";
+import { reverseList } from "./reverseList";
+import { ListNode } from "./node/ListNode";
+import { linkedListToArray } from "./helpers/linkedListToArray";
+import { describe, expect, test } from "@jest/globals";
 
 // Example 1:
 
