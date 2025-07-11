@@ -20,7 +20,7 @@
  *
  * @param {number} n
  * @return {boolean}
- * 
+ *
  * @example
  * isFascinating(192) // true
  * isFascinating(100) // false

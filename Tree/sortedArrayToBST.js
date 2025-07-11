@@ -15,7 +15,7 @@ import { TreeNode } from "./data-structure/TreeNode";
  *
  * @param {number[]} nums
  * @return {TreeNode}
- * 
+ *
  * @example
  * Input: nums = [-10,-3,0,5,9]
  * Output: [0,-3,9,-10,null,5]

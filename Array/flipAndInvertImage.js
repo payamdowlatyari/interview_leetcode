@@ -15,14 +15,14 @@
 
 /**
  * Flips and inverts a binary image.
- * 
+ *
  * @param {number[][]} image
  * @return {number[][]}
- * 
+ *
  * @example
  * Input: image = [[1,1,0],[1,0,1],[0,0,0]]
  * Output: [[1,0,0],[0,1,0],[1,1,1]]
- * 
+ *
  * Time Complexity: O(n^2), where n is the number of rows and columns in the image.
  * Space Complexity: O(1), since we are modifying the image in-place.
  */

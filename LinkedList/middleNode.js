@@ -17,7 +17,7 @@ import { ListNode } from "./node/ListNode";
  */
 /**
  * Returns the middle node of a linked list.
- * 
+ *
  * @param {ListNode} head
  * @return {ListNode}
  *

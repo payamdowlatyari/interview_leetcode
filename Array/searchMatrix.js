@@ -19,7 +19,7 @@
  * @param {number[][]} matrix
  * @param {number} target
  * @return {boolean}
- * 
+ *
  * @example
  * Input: matrix = [[1,2,3],[4,5,6],[7,8,9]], target = 5
  * Output: true

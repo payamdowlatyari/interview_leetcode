@@ -3,7 +3,7 @@
  * @description A heap is a data structure that is a binary tree where the value of each node is greater than or equal to the values of its children.
  * The heap is a complete binary tree where the last level is filled from left to right. The first level is filled from right to left.
  * The heap is a max-heap by default. The heap is a min-heap if the comparator function is reversed.
- * 
+ *
  * @example
  * const heap = new Heap();
  * heap.add(5);
@@ -39,7 +39,9 @@ export class Heap {
     this.comparator = (i1, i2) => {
       const value = comparator(this.array[i1], this.array[i2]);
       if (Number.isNaN(value))
-        throw new Error(`Comparator should evaluate to a number. Got ${value} when comparing ${this.array[i1]} with ${this.array[i2]}`);
+        throw new Error(
+          `Comparator should evaluate to a number. Got ${value} when comparing ${this.array[i1]} with ${this.array[i2]}`,
+        );
       return value;
     };
   }
@@ -221,7 +223,7 @@ export class MinHeap extends Heap {
  * respect of their parents, can either be greater
  * or less than the parent. This makes it a min priority queue
  * or max priority queue.
- * 
+ *
  * @class MinPriorityQueue
  * @description Creates a new instance of MinPriorityQueue.
  *
@@ -232,129 +234,129 @@ export class MinHeap extends Heap {
  * minPriorityQueue.insert(3);
  * minPriorityQueue.insert(4);
  * minPriorityQueue.insert(5);
- * 
+ *
  * console.log(minPriorityQueue.peek()); // 1
  * console.log(minPriorityQueue.remove()); // 1
  * console.log(minPriorityQueue.size); // 4
  */
 export class MinPriorityQueue {
-  constructor (c) {
-    this.heap = []
-    this.capacity = c
-    this.size = 0
+  constructor(c) {
+    this.heap = [];
+    this.capacity = c;
+    this.size = 0;
   }
 
   /**
    * Inserts the key at the end and rearranges it
    * so that the binary heap is in appropriate order
-   * 
+   *
    * @param {*} key - The key to be inserted into the heap
    * @description This function inserts a key at the end of the heap and then
    * calls the bubbleUp function to restore the heap property.
    * If the heap is full, it returns without inserting the key.
    */
-  insert (key) {
-    if (this.isFull()) return
-    this.heap[this.size + 1] = key
-    let k = this.size + 1
+  insert(key) {
+    if (this.isFull()) return;
+    this.heap[this.size + 1] = key;
+    let k = this.size + 1;
     while (k > 1) {
-      const p = Math.floor(k / 2)
+      const p = Math.floor(k / 2);
       if (this.heap[k] < this.heap[p]) {
-        this.swap(k, p)
-        k = p
+        this.swap(k, p);
+        k = p;
       } else {
-        break
+        break;
       }
     }
-    this.size++
+    this.size++;
   }
 
   /**
    * Deletes the highest priority value from the heap.
    * The last element goes to ahead to first position and reorder heap
-   * 
+   *
    * @description This function deletes the highest priority value from the heap.
    * It replaces the root with the last element and then calls the sink function
    * to restore the heap property.
    * If the heap is empty, it returns without deleting the value.
    */
-  delete () {
-    if (this.isEmpty()) return
-    this.heap[1] = this.heap[this.size]
-    this.size--
-    this.sink(1)
+  delete() {
+    if (this.isEmpty()) return;
+    this.heap[1] = this.heap[this.size];
+    this.size--;
+    this.sink(1);
   }
 
   /**
    * Sinks the node at the given index down the heap to restore the heap property.
-   * 
+   *
    * @param {number} k - The index of the node to sink.
    * @description This function sinks the node at the given index down the heap to
    * restore the heap property. It compares the value of the node with its children
    * and swaps them if necessary. The process continues until the node is in the
    * correct position.
    */
-  sink (k) {
+  sink(k) {
     while (2 * k <= this.size) {
-      let minIndex = 2 * k
+      let minIndex = 2 * k;
       if (2 * k + 1 <= this.size && this.heap[2 * k + 1] < this.heap[2 * k]) {
-        minIndex = 2 * k + 1
+        minIndex = 2 * k + 1;
       }
       if (this.heap[k] > this.heap[minIndex]) {
-        this.swap(k, minIndex)
-        k = minIndex
+        this.swap(k, minIndex);
+        k = minIndex;
       } else {
-        break
+        break;
       }
     }
   }
 
   /**
    * Swaps the values of two nodes in the heap.
-   * 
+   *
    * @param {number} i1 - The index of the first node to swap.
    * @param {number} i2 - The index of the second node to swap.
    * @description This function swaps the values of two nodes in the heap.
    */
-  swap (i1, i2) {
-    [this.heap[i1], this.heap[i2]] = [this.heap[i2], this.heap[i1]]
+  swap(i1, i2) {
+    [this.heap[i1], this.heap[i2]] = [this.heap[i2], this.heap[i1]];
   }
 
   /**
    * Checks if the heap is empty.
-   * 
+   *
    * @returns {boolean} True if the heap is empty, false otherwise.
    */
-  isEmpty () {
-    return this.size === 0
+  isEmpty() {
+    return this.size === 0;
   }
 
   /**
    * Checks if the heap is full.
-   * 
+   *
    * @returns {boolean} True if the heap is full, false otherwise.
    */
-  isFull () {
-    return this.size === this.capacity
+  isFull() {
+    return this.size === this.capacity;
   }
 
   /**
    * Returns the highest priority value in the heap.
-   * 
+   *
    * @returns {*} The highest priority value in the heap.
    */
-  peek () {
-    return this.heap[1]
+  peek() {
+    return this.heap[1];
   }
 
   /**
    * Prints the heap.
-   * 
+   *
    * @description This function prints the values of all the nodes in the heap.
    */
-  print () {
+  print() {
     for (let i = 1; i <= this.size; i++) {
-      console.log(this.heap[i])
+      console.log(this.heap[i]);
     }
   }
 }

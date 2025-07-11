@@ -17,7 +17,7 @@
  * @param {string} s
  * @param {string} t
  * @return {boolean}
- * 
+ *
  * @example
  * Input: s = "ab#c", t = "ad#c"
  * Output: true

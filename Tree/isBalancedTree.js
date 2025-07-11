@@ -23,7 +23,7 @@ const height = (root) => {
  *
  * @param {TreeNode} root
  * @return {boolean}
- * 
+ *
  * @example
  * Input: root = [3,9,20,null,null,15,7]
  * Output: true

@@ -15,7 +15,7 @@
  *
  * @param {number} numRows
  * @return {number[][]}
- * 
+ *
  * @example
  * Input: numRows = 5
  * Output: [

@@ -1,7 +1,7 @@
 /**
  * @class Queue
  * @description A class representing a queue data structure.
- * 
+ *
  * @example
  * const queue = new Queue();
  * queue.enqueue('Item 1');

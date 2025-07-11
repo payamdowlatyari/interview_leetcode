@@ -19,7 +19,7 @@ import { TreeNode } from "./node/TreeNode";
  *
  * @param {TreeNode} root
  * @return {number}
- * 
+ *
  * @example
  * Input: root = [1,2,3,4,5]
  * Output: 3

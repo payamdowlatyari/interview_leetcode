@@ -26,14 +26,14 @@
  * @param {number[]} nums - The array to be modified.
  * @param {number} start - The starting index from which to reverse the sub-array.
  * @returns {void} - This function does not return anything. It modifies the input array in-place.
- * 
+ *
  * @example
  * Input: nums = [1,2,3]
  * Output: [3,2,1]
- * 
+ *
  * Input: nums = [3,2,1]
  * Output: [1,2,3]
- * 
+ *
  * Time complexity: O(n)
  * Space complexity: O(1)
  */
@@ -52,14 +52,14 @@ function reverse(nums, start) {
  *
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
- * 
+ *
  * @example
  * Input: nums = [1,2,3]
  * Output: [1,3,2]
- * 
+ *
  * Input: nums = [3,2,1]
  * Output: [1,2,3]
- * 
+ *
  * Input: nums = [1,1,5]
  * Output: [1,5,1]
  *

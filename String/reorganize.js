@@ -13,7 +13,7 @@
  *
  * @param {string} s
  * @return {string}
- * 
+ *
  * @example
  * Input: s = "aab"
  * Output: "aba"

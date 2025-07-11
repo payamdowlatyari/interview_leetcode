@@ -20,7 +20,7 @@
  * @param {character[][]} board
  * @param {string} word
  * @return {boolean}
- * 
+ *
  * @example
  * Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
  * Output: true

@@ -12,11 +12,11 @@
  *
  * @param {string} num
  * @return {string}
- * 
+ *
  * @example
  * Input: num = "51230100"
  * Output: "512301"
- * 
+ *
  * Input: num = "123"
  * Output: "123"
  *

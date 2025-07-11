@@ -12,7 +12,7 @@
  *
  * @param {number} num
  * @return {number}
- * 
+ *
  * @example
  * addDigits(38) // 2
  * addDigits(0) // 0

@@ -14,7 +14,7 @@
  *
  * @param {number[]} arr
  * @return {boolean}
- * 
+ *
  * @example
  * Input: arr = [1,2,2,1,1,3]
  * Output: true

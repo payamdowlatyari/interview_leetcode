@@ -49,11 +49,11 @@ const isLarger = (node, value) => {
  * @param {number} min - The minimum value allowed in the left subtree
  * @param {number} max - The maximum value allowed in the right subtree
  * @return {boolean} true if the tree is a valid BST, false otherwise
- * 
+ *
  * @example
  * Input: root = [2,1,3]
  * Output: true
- * 
+ *
  * Time complexity: O(n) where n is the number of nodes in the tree
  * Space complexity: O(n) where n is the number of nodes in the tree
  */

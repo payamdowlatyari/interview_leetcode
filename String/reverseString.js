@@ -21,7 +21,7 @@
  * @param {string} s
  * @param {number} k
  * @return {string}
- * 
+ *
  * @example
  * Input: s = "abcdefg", k = 2
  * Output: "bacdfeg"

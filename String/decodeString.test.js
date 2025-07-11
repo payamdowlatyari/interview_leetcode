@@ -15,7 +15,7 @@ import { expect, test, describe } from "@jest/globals";
 
 // Input: s = "2[abc]3[cd]ef"
 // Output: "abcabccdcdcdef"
- 
+
 describe("decodeString", () => {
   test("Example 1", () => {
     expect(decodeString("3[a]2[bc]")).toBe("aaabcbc");

@@ -13,7 +13,7 @@
  *
  * @param {number} n
  * @return {boolean}
- * 
+ *
  * @example
  * isPowerOfTwo(1) // true
  * isPowerOfTwo(16) // true

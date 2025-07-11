@@ -19,7 +19,7 @@
  * @param {number} r - The right index of the current search range.
  * @param {number} t - The target value to search for.
  * @return {number} - The index of the target value if found; otherwise, -1.
- * 
+ *
  * @example
  * Input: nums = [-1,0,3,5,9,12], target = 9
  * Output: 4
@@ -46,7 +46,7 @@ const binarySearch = (nums, l, r, t) => {
  * @param {number[]} nums
  * @param {number} target
  * @return {number}
- * 
+ *
  * @example
  * Input: nums = [-1,0,3,5,9,12], target = 9
  * Output: 4

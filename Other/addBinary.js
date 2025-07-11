@@ -19,12 +19,12 @@
  * @param {number} s - the carry bit (0 or 1)
  * @return {string} the sum of the two binary strings and the carry bit
  * as a binary string
- * 
+ *
  * @example
  * addOneDigit('10', '10', 0) // '100'
  * addOneDigit('10', '10', 1) // '11'
  * addOneDigit('10', '10', 2) // '1'
- * 
+ *
  * Time complexity: O(n)
  * Space complexity: O(n)
  */
@@ -62,7 +62,7 @@ const addOneDigit = (a, b, s) => {
  * @param {string} a
  * @param {string} b
  * @return {string}
- * 
+ *
  * @example
  * addBinary('1010', '1011') // '10101'
  *

@@ -16,7 +16,7 @@
  *
  * @param {number[]} nums - The input array of integers.
  * @returns {number[]} - The resulting subsequence.
- * 
+ *
  * @example
  * Input: nums = [4,3,10,9,8]
  * Output: [10,9]

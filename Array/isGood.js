@@ -14,7 +14,7 @@
  *
  * @param {number[]} nums
  * @return {boolean}
- * 
+ *
  * @example
  * Input: nums = [1,2,3,3]
  * Output: true

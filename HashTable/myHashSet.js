@@ -17,7 +17,7 @@
  *
  * @param {number} size
  * @return {HashTable}
- * 
+ *
  * @example
  * const hashTable = new HashTable(size);
  * hashTable.add(key, value);

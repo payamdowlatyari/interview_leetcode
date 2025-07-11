@@ -18,7 +18,7 @@
  * @param {number[]} coins
  * @param {number} amount
  * @return {number}
- * 
+ *
  * @example
  * coinChange([1, 2, 5], 11) // 3
  * coinChange([2], 3) // -1

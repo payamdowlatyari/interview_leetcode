@@ -1,6 +1,6 @@
 /**
- * Definition for a Node. 
- * 
+ * Definition for a Node.
+ *
  * @param {number} val
  * @param {Node[]} neighbors
  *

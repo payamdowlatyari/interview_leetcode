@@ -18,14 +18,14 @@
  * @param {character[]} letters
  * @param {character} target
  * @return {character}
- * 
+ *
  * @example
  * Input: letters = ["c","f","j"], target = "a"
  * Output: "c"
- * 
+ *
  * Input: letters = ["c","f","j"], target = "c"
  * Output: "f"
- * 
+ *
  * Input: letters = ["x","x","y","y"], target = "z"
  * Output: "x"
  *

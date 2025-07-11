@@ -23,7 +23,7 @@
  *
  * @param {string} s
  * @return {boolean}
- * 
+ *
  * @example
  * Input: s = "PPALLP"
  * Output: true

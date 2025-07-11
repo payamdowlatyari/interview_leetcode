@@ -14,7 +14,7 @@
  * @param {string} ransomNote
  * @param {string} magazine
  * @return {boolean}
- * 
+ *
  * @example
  * Input: ransomNote = "a", magazine = "b"
  * Output: false

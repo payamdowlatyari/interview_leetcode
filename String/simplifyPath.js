@@ -28,7 +28,7 @@
  *
  * @param {string} path - The absolute path to simplify.
  * @return {string} - The simplified canonical path.
- * 
+ *
  * @example
  * simplifyPath("/home/") // "/home"
  * simplifyPath("/../") // "/"

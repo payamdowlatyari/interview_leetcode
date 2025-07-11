@@ -16,7 +16,7 @@ import { ListNode } from "./node/ListNode";
  * @param {ListNode} head
  * @param {number} x
  * @return {ListNode}
- * 
+ *
  * @example
  * const head = new ListNode(1, new ListNode(4, new ListNode(3, new ListNode(2, new ListNode(5, new ListNode(2)))));
  * const x = 3;

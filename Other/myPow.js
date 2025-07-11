@@ -13,7 +13,7 @@
  * @param {number} x - base number
  * @param {number} n - exponent
  * @returns {number} x^n
- * 
+ *
  * @example
  * myPow(2, 3) // 8
  *

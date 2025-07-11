@@ -17,7 +17,7 @@
  * @param {string} s - The string to be segmented.
  * @param {string[]} wordDict - The dictionary of words.
  * @return {boolean} - Returns true if the string can be segmented, false otherwise.
- * 
+ *
  * @example
  * Input: s = "leetcode", wordDict = ["leet", "code"]
  * Output: true

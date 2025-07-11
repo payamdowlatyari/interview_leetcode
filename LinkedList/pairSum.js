@@ -25,7 +25,7 @@ import { ListNode } from "./node/ListNode";
  */
 /**
  * Returns the maximum twin sum of a linked list.
- * 
+ *
  * @param {ListNode} head
  * @return {number}
  *

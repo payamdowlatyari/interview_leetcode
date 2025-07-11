@@ -20,7 +20,7 @@
  * @param {number} x - The first integer.
  * @param {number} y - The second integer.
  * @return {number} - The greatest common divisor of x and y.
- * 
+ *
  * @example
  * Input: x = 6, y = 4
  * Output: 2
@@ -40,7 +40,7 @@ const gcd = (x, y) => {
  *
  * @param {number[]} nums
  * @return {number}
- * 
+ *
  * @example
  * Input: nums = [2,4,6,8]
  * Output: 2

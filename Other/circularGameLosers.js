@@ -34,7 +34,7 @@
  * @param {number} n
  * @param {number} k
  * @return {number[]}
- * 
+ *
  * @example
  * circularGameLosers(5, 2) // [4, 5]
  * circularGameLosers(4, 4) // [2, 3, 4]

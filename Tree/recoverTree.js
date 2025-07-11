@@ -7,15 +7,15 @@ import { TreeNode } from "./node/TreeNode";
 /**
  * Finds the first node in the tree which has a value greater than the given value.
  * If the node is found, it is returned. If not, the function returns null.
- * 
+ *
  * @param {TreeNode} node - The node to search from
  * @param {number} value - The value to search for
  * @return {TreeNode} The first node which has a value greater than the given value, or null if none is found
- * 
+ *
  * @example
  * Input: root = [3,1,4,null,2], k = 1
  * Output: 2
- * 
+ *
  * Time complexity: O(n) where n is the number of nodes in the tree
  * Space complexity: O(n) where n is the number of nodes in the tree
  */
@@ -41,15 +41,15 @@ const greaterThan = (node, value) => {
 /**
  * Finds the first node in the tree which has a value less than the given value.
  * If the node is found, it is returned. If not, the function returns null.
- * 
+ *
  * @param {TreeNode} node - The node to search from
  * @param {number} value - The value to search for
  * @return {TreeNode} The first node which has a value less than the given value, or null if none is found
- * 
+ *
  * @example
  * Input: root = [3,1,4,null,2], k = 1
  * Output: 2
- * 
+ *
  * Time complexity: O(n) where n is the number of nodes in the tree
  * Space complexity: O(n) where n is the number of nodes in the tree
  */
@@ -77,11 +77,11 @@ const LessThan = (node, value) => {
  * The function works by traversing the tree, and whenever it finds a node which has a value less
  * than the given value, it swaps the value of the current node with the value of the found node.
  * @param {TreeNode} root - The root of the tree to recover
- * 
+ *
  * @example
  * Input: root = [3,1,4,null,2]
  * Output: [2,1,4,null,3]
- * 
+ *
  * Time complexity: O(n) where n is the number of nodes in the tree
  * Space complexity: O(n) where n is the number of nodes in the tree
  */

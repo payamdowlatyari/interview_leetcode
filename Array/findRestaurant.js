@@ -23,7 +23,7 @@
  * @param {string[]} list1
  * @param {string[]} list2
  * @return {string[]}
- * 
+ *
  * @example
  * Input: list1 = ["Shogun","Tapioca Express","Burger King","KFC"],
  *        list2 = ["Piatti","The Grill at Torrey Pines","Hungry Hunter Steakhouse","Shogun"]

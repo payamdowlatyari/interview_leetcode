@@ -17,7 +17,7 @@
  *
  * @param {string} s
  * @return {boolean}
- * 
+ *
  * @example
  * Input: s = "A man, a plan, a canal: Panama"
  * Output: true

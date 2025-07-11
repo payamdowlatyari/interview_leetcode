@@ -15,7 +15,7 @@ import { TreeNode } from "./node/TreeNode";
  * The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
  * @param {TreeNode} root - the root of the binary tree
  * @return {number} the minimum depth of the tree
- * 
+ *
  * @example
  * Input: root = [3,9,20,null,null,15,7]
  * Output: 2

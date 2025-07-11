@@ -18,7 +18,7 @@
  * @param {number} start - The starting index of the sub-array.
  * @param {number} end - The ending index of the sub-array.
  * @returns {void} - This function does not return anything. It modifies the input array in-place.
- * 
+ *
  * Time complexity: O(n)
  * Space complexity: O(1)
  */
@@ -39,11 +39,11 @@ function reverse(nums, start, end) {
  * @param {number[]} nums
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.
- * 
+ *
  * @example
  * Input: nums = [1,2,3,4,5,6,7], k = 3
  * Output: [5,6,7,1,2,3,4]
- * 
+ *
  * Input: nums = [-1,-100,3,99], k = 2
  * Output: [3,99,-1,-100]
  *

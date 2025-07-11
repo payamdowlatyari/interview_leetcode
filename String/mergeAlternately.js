@@ -15,7 +15,7 @@
  * @param {string} word1
  * @param {string} word2
  * @return {string}
- * 
+ *
  * @example
  * Input: word1 = "abc", word2 = "def"
  * Output: "adbcef"

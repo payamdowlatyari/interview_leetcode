@@ -25,7 +25,7 @@
  * in the original array.
  * @param {number} first - The first element of the original array.
  * @returns {number[]} The decoded original array.
- * 
+ *
  * @example
  * decode([1, 2, 3], 1) // [1, 0, 2, 1]
  * decode([6, 2, 7, 3], 4) // [4, 2, 6, 2, 7, 3]

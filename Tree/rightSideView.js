@@ -18,10 +18,10 @@ import { TreeNode } from "./node/TreeNode";
  */
 /**
  * Gets the values of the nodes visible from the right side view of the tree.
- * 
+ *
  * @param {TreeNode} root
  * @return {number[]}
- * 
+ *
  * @example
  * Input: root = [1,2,3,null,5,null,4]
  * Output: [1,3,4]

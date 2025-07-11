@@ -17,18 +17,18 @@
 /**
  * Reshapes a given matrix into a new matrix with specified dimensions.
  * If the reshape operation is not possible, returns the original matrix.
- * 
+ *
  * @param {number[][]} mat
  * @param {number} r
  * @param {number} c
  * @return {number[][]}
- * 
+ *
  * @example
  * Input: mat = [[1,2],[3,4]], r = 1, c = 4
  * Output: [[1,2,3,4]]
  * Input: mat = [[1,2],[3,4]], r = 2, c = 4
  * Output: [[1,2],[3,4]]
- * 
+ *
  * Time Complexity: O(m * n), where m is the number of rows and n is the number of columns in the original matrix.
  * Space Complexity: O(1), since we are using the result matrix directly.
  */
@@ -42,4 +42,4 @@ export function matrixReshape(mat, r, c) {
     result[Math.floor(i / c)][i % c] = mat[Math.floor(i / n)][i % n];
   }
   return result;
-};
+}

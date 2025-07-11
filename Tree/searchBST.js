@@ -22,11 +22,11 @@ import { TreeNode } from "./data-structure/TreeNode";
  */
 /**
  * Searches a binary search tree for a node with a given value and returns the node.
- * 
+ *
  * @param {TreeNode} root
  * @param {number} val
  * @return {TreeNode}
- * 
+ *
  * @example
  * Input: root = [4,2,7,1,3], val = 2
  * Output: [2,1,3]

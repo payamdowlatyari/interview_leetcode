@@ -3,10 +3,10 @@
  *
  * This function takes an array of items and returns an array of all possible combinations of the items.
  * Each combination is represented as an array of items.
- * 
+ *
  * @param {Array} items
  * @return {Array}
- * 
+ *
  * @example
  * allCombinations([1, 2, 3]); // [[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]
  *

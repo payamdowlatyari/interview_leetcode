@@ -15,7 +15,7 @@
  *
  * @param {string} s
  * @return {string}
- * 
+ *
  * @example
  * reverseWords("the sky is blue") // "blue is sky the"
  * reverseWords("  hello world  ") // "world hello"

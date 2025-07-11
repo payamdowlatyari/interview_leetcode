@@ -46,7 +46,7 @@
  *
  * MyStack is a data structure which implements a stack using two queues.
  * The implemented stack should support all the functions of a normal stack (push, peek, pop, and empty).
- * 
+ *
  * @example
  * const myStack = new MyStack();
  * myStack.push(1);
@@ -54,7 +54,7 @@
  * myStack.top(); // return 2
  * myStack.pop(); // return 2
  * myStack.empty(); // return False
- * 
+ *
  * Time complexity: O(1)
  * Space complexity: O(n)
  */
@@ -119,7 +119,7 @@ class MyStack {
  *
  * MyQueue is a data structure which implements a queue using two stacks.
  * The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
- * 
+ *
  * @example
  * const myQueue = new MyQueue();
  * myQueue.push(1);
@@ -127,7 +127,7 @@ class MyStack {
  * myQueue.peek(); // return 1
  * myQueue.pop(); // return 1
  * myQueue.empty(); // return False
- * 
+ *
  * Time complexity: O(1)
  * Space complexity: O(n)
  */

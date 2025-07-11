@@ -19,14 +19,14 @@
  *
  * @param {number[][]} obstacleGrid
  * @return {number}
- * 
+ *
  * @example
  * Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
  * Output: 2
  * Explanation: There is one obstacle in the middle of the 3x3 grid above.
  * There are two ways to reach the bottom-right corner:
  * 1. Right -> Down -> Down
- * 2. Down -> Right -> Down 
+ * 2. Down -> Right -> Down
  *
  * Time complexity: O(m * n)
  * Space complexity: O(1)

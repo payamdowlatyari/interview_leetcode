@@ -16,11 +16,11 @@
 // board[i][j] is a digit 1-9 or '.'.
 
 /**
- * Checks if a Sudoku board is valid. 
+ * Checks if a Sudoku board is valid.
  *
  * @param {character[][]} board - The Sudoku board to be checked.
  * @return {boolean} - Returns true if the board is valid, false otherwise.
- * 
+ *
  * @example
  * isValidSudoku([
  *   ["5","3",".",".","7",".",".",".","."],
@@ -34,7 +34,7 @@
  *   [".",".",".",".","8",".",".","7","9"]
  * ]);
  * // Output: true
- * 
+ *
  * @example
  * isValidSudoku([
  *   ["8","3",".",".","7",".",".",".","."],

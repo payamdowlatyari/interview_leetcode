@@ -12,12 +12,12 @@
  *
  * @param {character[][]} matrix
  * @return {number}
- * 
+ *
  * @example
  * Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
  * Output: 4
  * Explanation: The maximum size square is a 1 x 1 square.
- * 
+ *
  * Input: matrix = [["0","1"],["1","0"]]
  * Output: 1
  * Explanation: The maximum size square is a 1 x 1 square.

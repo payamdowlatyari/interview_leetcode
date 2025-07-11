@@ -61,7 +61,7 @@ export function inOrderTraversal(root) {
  *
  * @param {TreeNode} root - The root node of the binary tree
  * @return {Array} An array containing the values of the nodes visited in post-order
- * 
+ *
  * @example
  * const root = new TreeNode(1);
  * root.left = new TreeNode(2);
@@ -88,7 +88,7 @@ export function postOrderTraversal(root) {
  *
  * @param {TreeNode} tree - The root node of the binary tree
  * @return {Array} An array containing the values of the nodes visited in breadth-first order
- * 
+ *
  * @example
  * const root = new TreeNode(1);
  * root.left = new TreeNode(2);
@@ -127,7 +127,7 @@ export function breadthFirstTraversal(tree) {
  *
  * @param {TreeNode} tree - The root node of the binary tree to traverse.
  * @return {Array} An array containing the values of the nodes visited in depth-first order.
- * 
+ *
  * @example
  * const root = new TreeNode(1);
  * root.left = new TreeNode(2);

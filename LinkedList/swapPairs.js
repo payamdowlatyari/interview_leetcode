@@ -22,7 +22,7 @@ import { ListNode } from "./node/ListNode";
  *
  * @param {ListNode} head
  * @return {ListNode}
- * 
+ *
  * @example
  * const head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
  * const result = swapPairs(head);

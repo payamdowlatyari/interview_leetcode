@@ -14,7 +14,7 @@
  *
  * @param {number[][]} coordinates
  * @return {boolean}
- * 
+ *
  * @example
  * const coordinates = [[1, 2], [2, 3], [3, 4]];
  * console.log(checkStraightLine(coordinates)); // Output: true

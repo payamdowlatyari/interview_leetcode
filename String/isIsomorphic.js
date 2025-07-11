@@ -18,7 +18,7 @@
  * @param {string} s
  * @param {string} t
  * @return {boolean}
- * 
+ *
  * @example
  * Input: s = "egg", t = "add"
  * Output: true

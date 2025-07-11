@@ -13,7 +13,7 @@ import { TreeNode } from "./node/TreeNode";
  *
  * @param {TreeNode} root - the root of the binary tree
  * @return {number} the maximum depth of the tree
- * 
+ *
  * @example
  * Input: root = [3,9,20,null,null,15,7]
  * Output: 3

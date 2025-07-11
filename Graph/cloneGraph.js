@@ -30,12 +30,12 @@ import { Node } from "./node/Node";
  *
  * @param {Node} node the node to clone the graph from
  * @return {Node} the root of the cloned graph
- * 
+ *
  * @example
  * const node = new Node(1, []);
  * node.val; // 1
  * node.neighbors; // []
- * 
+ *
  * const clonedNode = cloneGraph(node);
  * clonedNode.val; // 1
  * clonedNode.neighbors; // []

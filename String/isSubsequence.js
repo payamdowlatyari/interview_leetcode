@@ -23,7 +23,7 @@
  * @param {string} s
  * @param {string} t
  * @return {boolean}
- * 
+ *
  * @example
  * Input: s = "abc", t = "ahbgdc"
  * Output: true

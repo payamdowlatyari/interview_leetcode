@@ -14,7 +14,7 @@
  *
  * @param {number[]} nums
  * @return {number}
- * 
+ *
  * @example
  * Input: nums = [1,2,3,2]
  * Output: 4

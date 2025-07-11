@@ -14,7 +14,7 @@
  *
  * @param {number[]} nums
  * @return {number}
- * 
+ *
  * @example
  * maxProduct([2,3,-2,4]) // 6
  * maxProduct([-2,0,-1]) // 0

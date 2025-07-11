@@ -1,8 +1,6 @@
 import { findDifferentBinaryString } from "./findDifferentBinaryString";
 import { describe, test, expect } from "@jest/globals";
 
-
-
 // Example 1:
 
 // Input: nums = ["01","10"]
@@ -18,7 +16,6 @@ import { describe, test, expect } from "@jest/globals";
 // Input: nums = ["111","011","001"]
 // Output: "101"
 // Explanation: "101" does not appear in nums. "000", "010", "100", and "110" would also be correct.
- 
 
 describe("Describe Cases", () => {
   test("Test 1", () => {

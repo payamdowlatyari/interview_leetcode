@@ -19,7 +19,7 @@
 
 /**
  * Validates the number to be between -2^31 and 2^31 - 1
- * 
+ *
  * @param {number} q
  * @return {number}
  */
@@ -35,11 +35,11 @@ const valid = (q) => {
  * @param {number} dividend
  * @param {number} divisor
  * @return {number}
- * 
+ *
  * @example
  * Input: dividend = 10, divisor = 3
  * Output: 3
- * 
+ *
  * Input: dividend = 7, divisor = -3
  * Output: -2
  *

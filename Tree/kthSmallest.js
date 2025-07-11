@@ -17,7 +17,7 @@ import { TreeNode } from "./node/TreeNode";
  * @param {TreeNode} root - The root of the binary search tree.
  * @param {number} k - The kth position to find.
  * @return {number} - The kth smallest value in the BST.
- * 
+ *
  * @example
  * Input: root = [3,1,4,null,2], k = 1
  * Output: 1

@@ -17,20 +17,20 @@
 
 /**
  * Converts a string to a 32-bit signed integer.
- * 
+ *
  * @param {string} s
  * @return {number}
- * 
+ *
  * @example
  * Input: s = "42"
  * Output: 42
- * 
+ *
  * Input: s = "   -42"
  * Output: -42
- * 
+ *
  * Input: s = "4193 with words"
  * Output: 4193
- * 
+ *
  * Time complexity: O(n), where n is the length of the string.
  * Space complexity: O(1), as we use a constant amount of space.
  */

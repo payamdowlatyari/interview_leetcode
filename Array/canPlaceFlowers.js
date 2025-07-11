@@ -19,7 +19,7 @@
  * @param {number[]} flowerbed
  * @param {number} n
  * @return {boolean}
- * 
+ *
  * @example
  * canPlaceFlowers([1,0,0,0,1], 2) // true
  * canPlaceFlowers([1,0,0,0,1], 3) // false

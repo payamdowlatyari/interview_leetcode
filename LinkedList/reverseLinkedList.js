@@ -20,7 +20,7 @@ import { ListNode } from "./node/ListNode";
  * @param {number} left
  * @param {number} right
  * @return {ListNode}
- * 
+ *
  * @example
  * const head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
  * const result = reverseBetween(head, 2, 4);

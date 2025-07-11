@@ -1,6 +1,6 @@
 /**
  * A class representing a stack data structure.
- * 
+ *
  * @class Stack
  * @example
  * const stack = new Stack();
@@ -22,7 +22,7 @@ export class Stack {
 
   /**
    * Pushes an item onto the stack.
-   * 
+   *
    * @param {*} item - The item to be added to the stack.
    */
   push(item) {
@@ -31,7 +31,7 @@ export class Stack {
 
   /**
    * Removes and returns the item at the top of the stack.
-   * 
+   *
    * @returns {*} The item at the top of the stack.
    */
   pop() {
@@ -40,7 +40,7 @@ export class Stack {
 
   /**
    * Returns the item at the top of the stack without removing it.
-   * 
+   *
    * @returns {*} The item at the top of the stack.
    */
   peek() {
@@ -49,7 +49,7 @@ export class Stack {
 
   /**
    * Checks if the stack is empty.
-   * 
+   *
    * @returns {boolean} true if the stack is empty, false otherwise.
    */
   isEmpty() {
@@ -58,7 +58,7 @@ export class Stack {
 
   /**
    * Returns the number of items in the stack.
-   * 
+   *
    * @returns {number} The number of items in the stack.
    */
   size() {

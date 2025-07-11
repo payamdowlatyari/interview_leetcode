@@ -23,7 +23,7 @@
  * @param {number} big - The number of big slots available.
  * @param {number} medium - The number of medium slots available.
  * @param {number} small - The number of small slots available.
- * 
+ *
  * @example
  * const parkingSystem = new ParkingSystem(1, 1, 0);
  * console.log(parkingSystem.addCar(1)); // Output: true

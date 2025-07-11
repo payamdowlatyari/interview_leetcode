@@ -18,12 +18,12 @@
  *
  * @param {number[]} nums
  * @return {number}
- * 
+ *
  * @example
  * Input: nums = [1,3,2,2,5,2,3,7]
  * Output: 5
  * Explanation: The longest harmonious subsequence is [3,2,2,2,3].
- * 
+ *
  * Input: nums = [1,2,3,4]
  * Output: 2
  * Explanation: The longest harmonious subsequence is [2,3].

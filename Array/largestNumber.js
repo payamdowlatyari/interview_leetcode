@@ -13,11 +13,11 @@
  *
  * @param {number[]} nums
  * @return {string}
- * 
+ *
  * @example
  * Input: nums = [10,2]
  * Output: "210"
- * 
+ *
  * Input: nums = [3,30,34,5,9]
  * Output: "9534330"
  *

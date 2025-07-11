@@ -31,7 +31,7 @@
  *
  * @param {string} s
  * @returns {number}
- * 
+ *
  * @example
  * numDecodings("12") // 2
  * numDecodings("226") // 3

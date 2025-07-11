@@ -10,14 +10,14 @@ import { TreeNode } from "./node/TreeNode";
 
 /**
  * Checks if a binary tree is symmetric.
- * 
+ *
  * @param {TreeNode} root The root of the tree to check.
  * @returns {boolean} True if the tree is symmetric, false otherwise.
- * 
+ *
  * @example
  * Input: root = [1,2,2,3,4,4,3]
  * Output: true
- * 
+ *
  * Time complexity: O(n) where n is the number of nodes in the tree
  * Space complexity: O(n) where n is the number of nodes in the tree
  */

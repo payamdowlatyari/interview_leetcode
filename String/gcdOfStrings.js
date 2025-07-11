@@ -15,14 +15,14 @@
  * @param {string} str1
  * @param {string} str2
  * @return {string}
- * 
+ *
  * @example
  * Input: str1 = "ABCABC", str2 = "ABC"
  * Output: "ABC"
- * 
+ *
  * Input: str1 = "ABABAB", str2 = "ABAB"
  * Output: "AB"
- * 
+ *
  * Input: str1 = "LEET", str2 = "CODE"
  * Output: ""
  *

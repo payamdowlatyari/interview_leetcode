@@ -13,7 +13,7 @@
  *
  * @param {number[]} arr
  * @return {boolean}
- * 
+ *
  * @example
  * canMakeArithmeticProgression([3,5,1]) // true
  * canMakeArithmeticProgression([1,2,4]) // false
