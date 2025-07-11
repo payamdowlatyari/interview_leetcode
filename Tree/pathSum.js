@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode";
+import { TreeNode } from "./data-structure/TreeNode";
 
 // Given the root of a binary tree and an integer targetSum,
 // return true if the tree has a root-to-leaf path such that

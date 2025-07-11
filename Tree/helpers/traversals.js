@@ -1,4 +1,4 @@
-import { TreeNode } from "../node/TreeNode";
+import { TreeNode } from "../data-structure/TreeNode";
 
 /**
  * Converts a binary tree to an array using pre-order traversal.

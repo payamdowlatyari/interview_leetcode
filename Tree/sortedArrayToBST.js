@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode";
+import { TreeNode } from "./data-structure/TreeNode";
 
 // Given an integer array nums where the elements
 // are sorted in ascending order, convert it to a
