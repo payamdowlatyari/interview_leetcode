@@ -20,44 +20,43 @@ import { expect, test, describe, beforeEach } from "@jest/globals";
 // myHashSet.remove(2);   // set = [1]
 // myHashSet.contains(2); // return False, (already removed)
 
-describe('HashTable', () => {
+describe("HashTable", () => {
+  let myHashSet;
 
-    let myHashSet;
+  beforeEach(() => {
+    myHashSet = new HashTable(10);
+  });
 
-    beforeEach(() => {
-        myHashSet = new HashTable(10);
-    });
+  test("Example 1", () => {
+    myHashSet.add(1);
+    myHashSet.add(2);
+    expect(myHashSet.contains(1)).toBe(true);
+    expect(myHashSet.contains(3)).toBe(false);
+    myHashSet.add(2);
+    expect(myHashSet.contains(2)).toBe(true);
+    myHashSet.remove(2);
+    expect(myHashSet.contains(2)).toBe(false);
+  });
 
-    test('Example 1', () => {
-        myHashSet.add(1);
-        myHashSet.add(2);
-        expect(myHashSet.contains(1)).toBe(true);
-        expect(myHashSet.contains(3)).toBe(false);
-        myHashSet.add(2);
-        expect(myHashSet.contains(2)).toBe(true);
-        myHashSet.remove(2);
-        expect(myHashSet.contains(2)).toBe(false);
-    });
+  test("Example 2", () => {
+    myHashSet.add(1);
+    expect(myHashSet.contains(1)).toBe(true);
+    myHashSet.remove(1);
+    expect(myHashSet.contains(1)).toBe(false);
+  });
 
-    test('Example 2', () => {
-        myHashSet.add(1);
-        expect(myHashSet.contains(1)).toBe(true);
-        myHashSet.remove(1);
-        expect(myHashSet.contains(1)).toBe(false);
-    });
+  test("Example 3", () => {
+    expect(myHashSet.contains(1)).toBe(false);
+  });
 
-    test('Example 3', () => {
-        expect(myHashSet.contains(1)).toBe(false);
-    });
-
-    test('Example 4', () => {
-        myHashSet.add(1);
-        myHashSet.add(2);
-        myHashSet.add(3);
-        expect(myHashSet.contains(1)).toBe(true);
-        expect(myHashSet.contains(2)).toBe(true);
-        expect(myHashSet.contains(3)).toBe(true);
-        myHashSet.remove(2);
-        expect(myHashSet.contains(2)).toBe(false);
-    });
+  test("Example 4", () => {
+    myHashSet.add(1);
+    myHashSet.add(2);
+    myHashSet.add(3);
+    expect(myHashSet.contains(1)).toBe(true);
+    expect(myHashSet.contains(2)).toBe(true);
+    expect(myHashSet.contains(3)).toBe(true);
+    myHashSet.remove(2);
+    expect(myHashSet.contains(2)).toBe(false);
+  });
 });

@@ -16,7 +16,7 @@ import { expect, test, describe } from "@jest/globals";
 
 // Input: adjList = [[]]
 // Output: [[]]
-// Explanation: Note that the input contains one empty list. 
+// Explanation: Note that the input contains one empty list.
 // The graph consists of only one node with val = 1 and it does not have any neighbors.
 
 // Example 3:
@@ -26,13 +26,15 @@ import { expect, test, describe } from "@jest/globals";
 // Explanation: This an empty graph, it does not have any nodes.
 
 describe("cloneGraph", () => {
-    test("cloneGraph", () => {
-        expect(cloneGraph(new Node(1, [new Node(2, [new Node(4)]), new Node(4)]))).toEqual(new Node(1, [new Node(2, [new Node(4)]), new Node(4)]));
-    });
-    test("cloneGraph", () => {
-        expect(cloneGraph(new Node(1))).toEqual(new Node(1));
-    });
-    test("cloneGraph", () => {
-        expect(cloneGraph(null)).toEqual(null);
-    });
+  test("cloneGraph", () => {
+    expect(
+      cloneGraph(new Node(1, [new Node(2, [new Node(4)]), new Node(4)])),
+    ).toEqual(new Node(1, [new Node(2, [new Node(4)]), new Node(4)]));
+  });
+  test("cloneGraph", () => {
+    expect(cloneGraph(new Node(1))).toEqual(new Node(1));
+  });
+  test("cloneGraph", () => {
+    expect(cloneGraph(null)).toEqual(null);
+  });
 });

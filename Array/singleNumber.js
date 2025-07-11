@@ -1,4 +1,4 @@
-// Given an integer array nums where every element appears three times except for one, 
+// Given an integer array nums where every element appears three times except for one,
 // which appears exactly once. Find the single element and return it.
 
 // You must implement a solution with a linear runtime complexity and use only constant extra space.
@@ -12,21 +12,26 @@
 /**
  * Finds the single number in an array where every element appears three times except for one.
  * This function iterates through the array and checks for the unique element that does not repeat.
- * 
+ *
  * @param {number[]} nums
  * @return {number}
  * 
+ * @example
+ * Input: nums = [2,2,3,2]
+ * Output: 3
+ * Explanation: The number that appears once is 3.
+ *
  * Time complexity: O(n)
  * Space complexity: O(1)
  */
 export function singleNumber(nums) {
+  let ones = 0,
+    twos = 0;
 
-    let ones = 0, twos = 0;
+  for (let i = 0; i < nums.length; i++) {
+    ones = (ones ^ nums[i]) & ~twos;
+    twos = (twos ^ nums[i]) & ~ones;
+  }
 
-    for (let i = 0; i < nums.length; i++) {
-        ones = (ones ^ nums[i]) & ~twos;
-        twos = (twos ^ nums[i]) & ~ones;
-    }
-
-    return ones;
-};
+  return ones;
+}

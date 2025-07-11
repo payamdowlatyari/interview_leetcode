@@ -9,18 +9,27 @@ import { describe, expect, test } from "@jest/globals";
 // Input: nums = [0]
 // Output: [[0]]
 
-describe('allCombinations', () => {
+describe("allCombinations", () => {
+  test("Test 1", () => {
+    const nums1 = [1, 2, 3];
+    const sum = allCombinations(nums1);
+    expect(sum).toEqual([
+      [1, 1, 1],
+      [1, 1, 2],
+      [1, 1, 3],
+      [1, 2, 2],
+      [1, 2, 3],
+      [1, 3, 3],
+      [2, 2, 2],
+      [2, 2, 3],
+      [2, 3, 3],
+      [3, 3, 3],
+    ]);
+  });
 
-    test('Test 1', () => { 
-        const nums1 = [1, 2, 3]
-        const sum = allCombinations(nums1)
-        expect(sum).toEqual([[1, 1, 1], [1, 1, 2], [1, 1, 3], [1, 2, 2], [1, 2, 3], [1, 3, 3], [2, 2, 2], [2, 2, 3], [2, 3, 3], [3, 3, 3]])
-    })
-
-    test('Test 2', () => {
-        const nums2 = [0]
-        const sum = allCombinations(nums2)
-        expect(sum).toEqual([[0]])
-    })
-
+  test("Test 2", () => {
+    const nums2 = [0];
+    const sum = allCombinations(nums2);
+    expect(sum).toEqual([[0]]);
+  });
 });

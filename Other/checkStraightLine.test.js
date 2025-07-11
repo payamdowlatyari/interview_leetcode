@@ -12,10 +12,28 @@ import { expect, test, describe } from "@jest/globals";
 // Output: false
 
 describe("checkStraightLine", () => {
-    test("Example 1", () => {
-        expect(checkStraightLine([[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]])).toBe(true);
-    });
-    test("Example 2", () => {
-        expect(checkStraightLine([[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]])).toBe(false);
-    });
+  test("Example 1", () => {
+    expect(
+      checkStraightLine([
+        [1, 2],
+        [2, 3],
+        [3, 4],
+        [4, 5],
+        [5, 6],
+        [6, 7],
+      ]),
+    ).toBe(true);
+  });
+  test("Example 2", () => {
+    expect(
+      checkStraightLine([
+        [1, 1],
+        [2, 2],
+        [3, 4],
+        [4, 5],
+        [5, 6],
+        [7, 7],
+      ]),
+    ).toBe(false);
+  });
 });

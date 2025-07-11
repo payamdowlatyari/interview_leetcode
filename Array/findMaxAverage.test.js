@@ -14,27 +14,25 @@ import { expect, test, describe } from "@jest/globals";
 // Input: nums = [4,0,4,3,3], k = 5
 // Output: 2.80000
 
-describe('Describe Cases', () => { 
+describe("Describe Cases", () => {
+  test("Test 1", () => {
+    const nums1 = [1, 12, -5, -6, 50, 3];
+    const k1 = 4;
+    const sum = findMaxAverage(nums1, k1);
+    expect(sum).toBe(12.75);
+  });
 
-    test('Test 1', () => { 
-        const nums1 = [1,12,-5,-6,50,3]
-        const k1 = 4
-        const sum = findMaxAverage(nums1, k1)
-        expect(sum).toBe(12.75)
-    })
+  test("Test 2", () => {
+    const nums2 = [5];
+    const k2 = 1;
+    const sum = findMaxAverage(nums2, k2);
+    expect(sum).toBe(5.0);
+  });
 
-    test('Test 2', () => {
-        const nums2 = [5]
-        const k2 = 1
-        const sum = findMaxAverage(nums2, k2)
-        expect(sum).toBe(5.00)
-    })
-
-    test('Test 3', () => {
-        const nums3 = [4,0,4,3,3]
-        const k3 = 5
-        const sum = findMaxAverage(nums3, k3)
-        expect(sum).toBe(2.80)
-    })
-
+  test("Test 3", () => {
+    const nums3 = [4, 0, 4, 3, 3];
+    const k3 = 5;
+    const sum = findMaxAverage(nums3, k3);
+    expect(sum).toBe(2.8);
+  });
 });

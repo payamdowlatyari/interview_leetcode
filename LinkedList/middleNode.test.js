@@ -14,29 +14,27 @@ import { describe, expect, test } from "@jest/globals";
 // Output: [4,5,6]
 // Explanation: Since the list has two middle nodes with values 3 and 4, we return the second one.
 
-describe('Middle Node Tests', () => {
+describe("Middle Node Tests", () => {
+  test("Test 1", () => {
+    const head1 = new ListNode(1);
+    head1.next = new ListNode(2);
+    head1.next.next = new ListNode(3);
+    head1.next.next.next = new ListNode(4);
+    head1.next.next.next.next = new ListNode(5);
 
-    test('Test 1', () => {
-        const head1 = new ListNode(1);
-        head1.next = new ListNode(2);
-        head1.next.next = new ListNode(3);
-        head1.next.next.next = new ListNode(4);
-        head1.next.next.next.next = new ListNode(5);
+    const result1 = middleNode(head1);
+    expect(result1).toEqual(head1.next.next);
+  });
 
-        const result1 = middleNode(head1);
-        expect(result1).toEqual(head1.next.next);
-    });
+  test("Test 2", () => {
+    const head2 = new ListNode(1);
+    head2.next = new ListNode(2);
+    head2.next.next = new ListNode(3);
+    head2.next.next.next = new ListNode(4);
+    head2.next.next.next.next = new ListNode(5);
+    head2.next.next.next.next.next = new ListNode(6);
 
-    test('Test 2', () => {
-        const head2 = new ListNode(1);
-        head2.next = new ListNode(2);
-        head2.next.next = new ListNode(3);
-        head2.next.next.next = new ListNode(4);
-        head2.next.next.next.next = new ListNode(5);
-        head2.next.next.next.next.next = new ListNode(6);
-
-        const result2 = middleNode(head2);
-        expect(result2).toEqual(head2.next.next.next);
-    });
-
+    const result2 = middleNode(head2);
+    expect(result2).toEqual(head2.next.next.next);
+  });
 });

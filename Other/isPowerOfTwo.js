@@ -5,27 +5,29 @@
 // Constraints:
 
 // -2^31 <= n <= 2^31 - 1
- 
+
 // Follow up: Could you solve it without loops/recursion?
 
 /**
  * Checks if a number is a power of two.
- * 
+ *
  * @param {number} n
  * @return {boolean}
  * 
+ * @example
+ * isPowerOfTwo(1) // true
+ * isPowerOfTwo(16) // true
+ * isPowerOfTwo(3) // false
+ *
  * Time complexity: O(log n)
  * Space complexity: O(1)
  */
 export function isPowerOfTwo(n) {
+  if (n == 0) return false;
 
-    if (n == 0) return false; 
+  if (n > 1 && n % 2 == 1) return false;
 
-    if (n > 1 && n % 2 == 1) return false;
+  if (n == 1) return true;
 
-
-    if (n == 1) return true;
-
-        return isPowerOfTwo(n / 2);
-   
-};
+  return isPowerOfTwo(n / 2);
+}

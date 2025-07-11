@@ -48,31 +48,29 @@ import { describe, it, expect } from "@jest/globals";
 // Explanation:
 // Reading stops at the first non-digit character 'w'.
 
-describe('String to Integer (atoi)', () => {
+describe("String to Integer (atoi)", () => {
+  it('should convert "42" to 42', () => {
+    const result = myAtoi("42");
+    expect(result).toBe(42);
+  });
 
-    it('should convert "42" to 42', () => {
-        const result = myAtoi("42");
-        expect(result).toBe(42);
-    });
+  it('should convert " -042" to -42', () => {
+    const result = myAtoi(" -042");
+    expect(result).toBe(-42);
+  });
 
-    it('should convert " -042" to -42', () => {
-        const result = myAtoi(" -042");
-        expect(result).toBe(-42);
-    });
+  it('should convert "1337c0d3" to 1337', () => {
+    const result = myAtoi("1337c0d3");
+    expect(result).toBe(1337);
+  });
 
-    it('should convert "1337c0d3" to 1337', () => {
-        const result = myAtoi("1337c0d3");
-        expect(result).toBe(1337);
-    });
+  it('should convert "0-1" to 0', () => {
+    const result = myAtoi("0-1");
+    expect(result).toBe(0);
+  });
 
-    it('should convert "0-1" to 0', () => {
-        const result = myAtoi("0-1");
-        expect(result).toBe(0);
-    });
-
-    it('should convert "words and 987" to 0', () => {
-        const result = myAtoi("words and 987");
-        expect(result).toBe(0);
-    });
-
+  it('should convert "words and 987" to 0', () => {
+    const result = myAtoi("words and 987");
+    expect(result).toBe(0);
+  });
 });

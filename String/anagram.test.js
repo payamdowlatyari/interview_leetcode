@@ -11,10 +11,10 @@ import { expect, test, describe } from "@jest/globals";
 // Output: false
 
 describe("isAnagram", () => {
-    test("Example 1", () => {
-        expect(isAnagram("anagram", "nagaram")).toBe(true);
-    });
-    test("Example 2", () => {
-        expect(isAnagram("rat", "car")).toBe(false);
-    });
+  test("Example 1", () => {
+    expect(isAnagram("anagram", "nagaram")).toBe(true);
+  });
+  test("Example 2", () => {
+    expect(isAnagram("rat", "car")).toBe(false);
+  });
 });

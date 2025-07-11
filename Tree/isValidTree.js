@@ -20,13 +20,12 @@ import { TreeNode } from "./node/TreeNode";
  * @return {boolean} true if all nodes in the tree have a value less than the given value, false otherwise
  */
 const isSmaller = (node, value) => {
+  if (!node) return true;
 
-    if (!node) return true;
+  if (node.val >= value) return false;
 
-    if (node.val >= value) return false;
-
-    return (isSmaller(node.left, value) && isSmaller(node.right, value));
-} 
+  return isSmaller(node.left, value) && isSmaller(node.right, value);
+};
 
 /**
  * Given a node and a value, determines if all nodes in the node's tree have a value greater than the given value.
@@ -35,13 +34,12 @@ const isSmaller = (node, value) => {
  * @return {boolean} true if all nodes in the tree have a value greater than the given value, false otherwise
  */
 const isLarger = (node, value) => {
+  if (!node) return true;
 
-    if (!node) return true;
+  if (node.val <= value) return false;
 
-    if (node.val <= value) return false;
-
-    return (isLarger(node.left, value) && isLarger(node.right, value));
-} 
+  return isLarger(node.left, value) && isLarger(node.right, value);
+};
 
 /**
  * Determines if the given binary tree is a valid Binary Search Tree (BST).
@@ -51,13 +49,21 @@ const isLarger = (node, value) => {
  * @param {number} min - The minimum value allowed in the left subtree
  * @param {number} max - The maximum value allowed in the right subtree
  * @return {boolean} true if the tree is a valid BST, false otherwise
+ * 
+ * @example
+ * Input: root = [2,1,3]
+ * Output: true
+ * 
+ * Time complexity: O(n) where n is the number of nodes in the tree
+ * Space complexity: O(n) where n is the number of nodes in the tree
  */
 export const isValidBST = (root, min = -Infinity, max = Infinity) => {
-    
-    if (!root) return true;
+  if (!root) return true;
 
-    if (root.val <= min || root.val >= max) return false;
+  if (root.val <= min || root.val >= max) return false;
 
-    return (isValidBST(root.left, min, root.val) && isValidBST(root.right, root.val, max));
+  return (
+    isValidBST(root.left, min, root.val) &&
+    isValidBST(root.right, root.val, max)
+  );
 };
-

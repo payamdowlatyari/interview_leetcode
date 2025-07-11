@@ -15,7 +15,7 @@ import { expect, test, describe } from "@jest/globals";
 // Input: word1 = "ab", word2 = "pqrs"
 // Output: "apbqrs"
 // Explanation: Notice that as word2 is longer, "rs" is appended to the end.
-// word1:  a   b 
+// word1:  a   b
 // word2:    p   q   r   s
 // merged: a p b q   r   s
 
@@ -25,29 +25,28 @@ import { expect, test, describe } from "@jest/globals";
 // Output: "apbqcd"
 // Explanation: Notice that as word1 is longer, "cd" is appended to the end.
 // word1:  a   b   c   d
-// word2:    p   q 
+// word2:    p   q
 // merged: a p b q c   d
 
-describe('Merge Alternately', () => {
+describe("Merge Alternately", () => {
+  test("Example 1", () => {
+    expect(mergeAlternately("abc", "pqr")).toBe("apbqcr");
+  });
 
-   test('Example 1', () => {
-      expect(mergeAlternately("abc", "pqr")).toBe("apbqcr");
-   });
+  test("Example 2", () => {
+    expect(mergeAlternately("ab", "pqrs")).toBe("apbqrs");
+  });
 
-   test('Example 2', () => {
-      expect(mergeAlternately("ab", "pqrs")).toBe("apbqrs");
-   });
+  test("Example 3", () => {
+    expect(mergeAlternately("abcd", "pq")).toBe("apbqcd");
+  });
 
-   test('Example 3', () => {
-      expect(mergeAlternately("abcd", "pq")).toBe("apbqcd");
-   });
+  test("Empty strings", () => {
+    expect(mergeAlternately("", "")).toBe("");
+  });
 
-    test('Empty strings', () => {
-        expect(mergeAlternately("", "")).toBe("");
-    });
-
-    test('One empty string', () => {
-        expect(mergeAlternately("abc", "")).toBe("abc");
-        expect(mergeAlternately("", "xyz")).toBe("xyz");
-    });
+  test("One empty string", () => {
+    expect(mergeAlternately("abc", "")).toBe("abc");
+    expect(mergeAlternately("", "xyz")).toBe("xyz");
+  });
 });

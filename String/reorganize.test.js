@@ -10,10 +10,10 @@ import { expect, test, describe } from "@jest/globals";
 // Output: ""
 
 describe("reorganizeString", () => {
-    test("Example 1", () => {
-        expect(reorganizeString("aab")).toBe("aba");
-    });
-    test("Example 2", () => {
-        expect(reorganizeString("aaab")).toBe("");
-    });
+  test("Example 1", () => {
+    expect(reorganizeString("aab")).toBe("aba");
+  });
+  test("Example 2", () => {
+    expect(reorganizeString("aaab")).toBe("");
+  });
 });

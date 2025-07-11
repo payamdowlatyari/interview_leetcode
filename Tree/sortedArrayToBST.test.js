@@ -10,15 +10,14 @@ import { expect, test, describe } from "@jest/globals";
 // Output: [3,1]
 // Explanation: [1,3] and [3,1] are both a height-balanced BSTs.
 
-describe('Describe Cases', () => {
-
-  test('Test 1', () => {
-      const tree = sortedArrayToBST([-10,-3,0,5,9]);
-      expect(tree).toEqual(expect.any(Object));
+describe("Describe Cases", () => {
+  test("Test 1", () => {
+    const tree = sortedArrayToBST([-10, -3, 0, 5, 9]);
+    expect(tree).toEqual(expect.any(Object));
   });
 
-  test('Test 2', () => {
-      const tree = sortedArrayToBST([1,3]);
-      expect(tree).toEqual(expect.any(Object));
+  test("Test 2", () => {
+    const tree = sortedArrayToBST([1, 3]);
+    expect(tree).toEqual(expect.any(Object));
   });
-})
+});

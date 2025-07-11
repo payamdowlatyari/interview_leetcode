@@ -13,17 +13,17 @@ import { expect, test, describe } from "@jest/globals";
 // Input: prices = [7,6,4,3,1]
 // Output: 0
 // Explanation: In this case, no transactions are done and the max profit = 0.
- 
-describe('maxProfit', () => {
-    test('Example 1', () => {
-        const prices1 = [7, 1, 5, 3, 6, 4];
-        const result = maxProfit(prices1);
-        expect(result).toBe(5);
-    });
 
-    test('Example 2', () => {
-        const prices2 = [7, 6, 4, 3, 1];
-        const result = maxProfit(prices2);
-        expect(result).toBe(0);
-    });
+describe("maxProfit", () => {
+  test("Example 1", () => {
+    const prices1 = [7, 1, 5, 3, 6, 4];
+    const result = maxProfit(prices1);
+    expect(result).toBe(5);
+  });
+
+  test("Example 2", () => {
+    const prices2 = [7, 6, 4, 3, 1];
+    const result = maxProfit(prices2);
+    expect(result).toBe(0);
+  });
 });

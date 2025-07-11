@@ -1,7 +1,7 @@
 import { diameterOfBinaryTree } from "./diameterOfBinaryTree";
 import { breadthFirstTraversal } from "./helpers/traversals";
 import { TreeNode } from "./node/TreeNode";
-import { expect, test, describe } from '@jest/globals';
+import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
 // Input: root = [1,2,3,4,5]
@@ -12,27 +12,25 @@ import { expect, test, describe } from '@jest/globals';
 // Input: root = [1,2]
 // Output: 1
 
-describe('Describe Cases', () => { 
+describe("Describe Cases", () => {
+  const tree = new TreeNode(1);
+  tree.left = new TreeNode(2);
+  tree.right = new TreeNode(3);
+  tree.left.left = new TreeNode(4);
+  tree.left.right = new TreeNode(5);
 
-    const tree = new TreeNode(1);
-    tree.left = new TreeNode(2);
-    tree.right = new TreeNode(3);
-    tree.left.left = new TreeNode(4);
-    tree.left.right = new TreeNode(5);
+  test("Test 1", () => {
+    const node = diameterOfBinaryTree(tree);
+    expect(node).toBe(3);
+  });
 
-    test('Test 1', () => { 
-        const node = diameterOfBinaryTree(tree);
-        expect(node).toBe(3);
-    });
+  test("Test 2", () => {
+    const node = breadthFirstTraversal(tree);
+    expect(node).toEqual([1, 2, 3, 4, 5]);
+  });
 
-    test('Test 2', () => { 
-        const node = breadthFirstTraversal(tree);
-        expect(node).toEqual([1, 2, 3, 4, 5]);
-    });
-
-    test('Test 3', () => { 
-        const node = diameterOfBinaryTree(null);
-        expect(node).toBe(0);
-    });
-
+  test("Test 3", () => {
+    const node = diameterOfBinaryTree(null);
+    expect(node).toBe(0);
+  });
 });

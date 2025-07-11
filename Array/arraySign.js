@@ -15,23 +15,34 @@
 
 /**
  * Find the sign of the product of all elements in the array.
- * 
+ *
  * @param {number[]} nums
  * @return {number}
  * 
+ * @example
+ * Input: nums = [1,2,3,4]
+ * Output: 1
+ * Explanation: The product of all values in the array is 24, and signFunc(24) = 1.
+ *
+ * Input: nums = [1,2,3,-4]
+ * Output: -1
+ * Explanation: The product of all values in the array is -24, and signFunc(-24) = -1.
+ *
+ * Input: nums = [-1,-2,-3,-4]
+ * Output: 3
+ * Explanation: The product of all values in the array is -24, and signFunc(-24) = -1.
+ *
  * Time complexity: O(n)
  * Space complexity: O(1)
  */
 export function arraySign(nums) {
-    
-    if (nums.includes(0)) return 0;
+  if (nums.includes(0)) return 0;
 
-    let product = 1;
+  let product = 1;
 
-    for (let i = 0; i < nums.length; i++)
-        product *= nums[i];
-    
-    if (product < 0) return -1;
-    
-    return 1;
-};
+  for (let i = 0; i < nums.length; i++) product *= nums[i];
+
+  if (product < 0) return -1;
+
+  return 1;
+}

@@ -1,6 +1,6 @@
 import { TreeNode } from "./node/TreeNode";
 
-// Given the root of a binary tree, imagine yourself standing on the right side of it, 
+// Given the root of a binary tree, imagine yourself standing on the right side of it,
 // return the values of the nodes you can see ordered from top to bottom.
 
 // Constraints:
@@ -17,33 +17,36 @@ import { TreeNode } from "./node/TreeNode";
  * }
  */
 /**
+ * Gets the values of the nodes visible from the right side view of the tree.
+ * 
  * @param {TreeNode} root
  * @return {number[]}
  * 
+ * @example
+ * Input: root = [1,2,3,null,5,null,4]
+ * Output: [1,3,4]
+ *
  * Time complexity: O(n) where n is the number of nodes in the tree
  * Space complexity: O(n) where n is the number of nodes in the tree
  */
 export function rightSideView(root) {
-  
-    if (!root) return [];  
-  
-    let queue = [root], result = []
+  if (!root) return [];
 
-    while (queue.length > 0) {
-      const levelSize = queue.length;
+  let queue = [root],
+    result = [];
 
-      for (let i = 0; i < levelSize; i++) {
-          let curr = queue.shift()
+  while (queue.length > 0) {
+    const levelSize = queue.length;
 
-          if (i === levelSize - 1)
-            result.push(curr.val)
+    for (let i = 0; i < levelSize; i++) {
+      let curr = queue.shift();
 
-          if (curr.left) 
-            queue.push(curr.left)
-                      
-          if (curr.right) 
-            queue.push(curr.right)
-      }
+      if (i === levelSize - 1) result.push(curr.val);
+
+      if (curr.left) queue.push(curr.left);
+
+      if (curr.right) queue.push(curr.right);
     }
-    return result;
-};
+  }
+  return result;
+}

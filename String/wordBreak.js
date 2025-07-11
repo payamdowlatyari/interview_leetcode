@@ -1,4 +1,4 @@
-// Given a string s and a dictionary of strings wordDict, return true if s can be segmented 
+// Given a string s and a dictionary of strings wordDict, return true if s can be segmented
 // into a space-separated sequence of one or more dictionary words.
 
 // Note that the same word in the dictionary may be reused multiple times in the segmentation.
@@ -13,27 +13,31 @@
 
 /**
  * Checks if a given string can be segmented into a space-separated sequence of one or more dictionary words.
- * 
+ *
  * @param {string} s - The string to be segmented.
  * @param {string[]} wordDict - The dictionary of words.
  * @return {boolean} - Returns true if the string can be segmented, false otherwise.
  * 
+ * @example
+ * Input: s = "leetcode", wordDict = ["leet", "code"]
+ * Output: true
+ *
  * Time complexity: O(n^2)
  * Space complexity: O(n)
  */
 export const wordBreak = (s, wordDict) => {
-    const wordSet = new Set(wordDict);
-    const dp = new Array(s.length + 1).fill(false);
-    dp[0] = true;
+  const wordSet = new Set(wordDict);
+  const dp = new Array(s.length + 1).fill(false);
+  dp[0] = true;
 
-    for (let i = 1; i <= s.length; i++) {
-        for (let j = 0; j < i; j++) {
-            if (dp[j] && wordSet.has(s.substring(j, i))) {
-                dp[i] = true;
-                break;
-            }
-        }
+  for (let i = 1; i <= s.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (dp[j] && wordSet.has(s.substring(j, i))) {
+        dp[i] = true;
+        break;
+      }
     }
+  }
 
-    return dp[s.length];
+  return dp[s.length];
 };

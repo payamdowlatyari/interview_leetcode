@@ -1,5 +1,5 @@
-// Given an integer array nums and an integer k, 
-// return the k most frequent elements. 
+// Given an integer array nums and an integer k,
+// return the k most frequent elements.
 // You may return the answer in any order.
 
 // Constraints:
@@ -14,18 +14,21 @@
  * Returns the k most frequent elements in an array.
  * This function counts the frequency of each element in the array,
  * sorts them by frequency, and returns the top k elements.
- * 
+ *
  * @param {number[]} nums
  * @param {number} k
  * @return {number[]}
  * 
+ * @example
+ * Input: nums = [1,1,1,2,2,3], k = 2
+ * Output: [1,2]
+ *
  * Time complexity: O(n)
  * Space complexity: O(n)
  */
-export function topKFrequent(nums, k){
-
-    let map = new Map();
-    for (let num of nums) map.set(num, (map.get(num) || 0) + 1);
-    let res = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
-    return res.slice(0, k).map(a => a[0]);
-};
+export function topKFrequent(nums, k) {
+  let map = new Map();
+  for (let num of nums) map.set(num, (map.get(num) || 0) + 1);
+  let res = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
+  return res.slice(0, k).map((a) => a[0]);
+}

@@ -17,13 +17,13 @@ import { expect, test, describe } from "@jest/globals";
 // Output: true
 
 describe("canConstruct", () => {
-    test("Example 1", () => {
-        expect(canConstruct("a", "b")).toBe(false);
-    });
-    test("Example 2", () => {
-        expect(canConstruct("aa", "ab")).toBe(false);
-    });
-    test("Example 3", () => {
-        expect(canConstruct("aa", "aab")).toBe(true);
-    });
+  test("Example 1", () => {
+    expect(canConstruct("a", "b")).toBe(false);
+  });
+  test("Example 2", () => {
+    expect(canConstruct("aa", "ab")).toBe(false);
+  });
+  test("Example 3", () => {
+    expect(canConstruct("aa", "aab")).toBe(true);
+  });
 });

@@ -1,5 +1,5 @@
-// You are given an array coordinates, coordinates[i] = [x, y], 
-// where [x, y] represents the coordinate of a point. 
+// You are given an array coordinates, coordinates[i] = [x, y],
+// where [x, y] represents the coordinate of a point.
 // Check if these points make a straight line in the XY plane.
 
 // Constraints:
@@ -11,41 +11,46 @@
 
 /**
  * Checks if the given coordinates form a straight line.
- * 
+ *
  * @param {number[][]} coordinates
  * @return {boolean}
  * 
+ * @example
+ * const coordinates = [[1, 2], [2, 3], [3, 4]];
+ * console.log(checkStraightLine(coordinates)); // Output: true
+ *
  * Time complexity: O(n)
  * Space complexity: O(1)
  */
-export function checkStraightLine(coordinates){
+export function checkStraightLine(coordinates) {
+  if (coordinates.length == 2) return true;
 
-    if (coordinates.length == 2) return true; 
+  let i = 1;
 
-    let i = 1;
-
-    if (coordinates[i][1] == 0 && coordinates[0][1] == 0) {
-
-        while (i < coordinates.length) {
-            if (coordinates[i][1] != 0) return false;
-            i++;
-        }
+  if (coordinates[i][1] == 0 && coordinates[0][1] == 0) {
+    while (i < coordinates.length) {
+      if (coordinates[i][1] != 0) return false;
+      i++;
     }
-    else if (coordinates[i][0] == 0 && coordinates[0][0] == 0) {
+  } else if (coordinates[i][0] == 0 && coordinates[0][0] == 0) {
+    while (i < coordinates.length) {
+      if (coordinates[i][0] != 0) return false;
+      i++;
+    }
+  } else {
+    let slope =
+      (coordinates[i][1] - coordinates[0][1]) /
+      (coordinates[i][0] - coordinates[0][0]);
 
-        while (i < coordinates.length) {
-            if (coordinates[i][0] != 0) return false;
-            i++;
-        }
-    } 
-    else {
-        
-        let slope = (coordinates[i][1] - coordinates[0][1]) / (coordinates[i][0] - coordinates[0][0]) ;
-
-        while (i < coordinates.length) {
-            if ((coordinates[i][1] - coordinates[0][1]) / (coordinates[i][0] - coordinates[0][0]) != slope) return false;
-            i++;
-        }
-    } 
-    return true;
-};
+    while (i < coordinates.length) {
+      if (
+        (coordinates[i][1] - coordinates[0][1]) /
+          (coordinates[i][0] - coordinates[0][0]) !=
+        slope
+      )
+        return false;
+      i++;
+    }
+  }
+  return true;
+}

@@ -19,18 +19,16 @@ import { expect, describe, it } from "@jest/globals";
 // Output: "x"
 // Explanation: There are no characters in letters that is lexicographically greater than 'z' so we return letters[0].
 
-describe('nextGreatestLetter', () => {
+describe("nextGreatestLetter", () => {
+  it("should return c", () => {
+    expect(nextGreatestLetter(["c", "f", "j"], "a")).toBe("c");
+  });
 
-   it('should return c', () => {
-      expect(nextGreatestLetter(["c","f","j"], "a")).toBe("c");
-   });
+  it("should return f", () => {
+    expect(nextGreatestLetter(["c", "f", "j"], "c")).toBe("f");
+  });
 
-   it('should return f', () => {
-      expect(nextGreatestLetter(["c","f","j"], "c")).toBe("f");
-   });
-
-   it('should return x', () => {
-      expect(nextGreatestLetter(["x","x","y","y"], "z")).toBe("x");
-   });
-
+  it("should return x", () => {
+    expect(nextGreatestLetter(["x", "x", "y", "y"], "z")).toBe("x");
+  });
 });

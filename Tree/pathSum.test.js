@@ -20,27 +20,26 @@ import { expect, test, describe } from "@jest/globals";
 // Output: false
 // Explanation: Since the tree is empty, there are no root-to-leaf paths.
 
-describe('Describe Cases', () => { 
+describe("Describe Cases", () => {
+  const tree = new TreeNode(5);
+  tree.left = new TreeNode(4);
+  tree.right = new TreeNode(8);
+  tree.left.left = new TreeNode(11);
+  tree.right.left = new TreeNode(13);
+  tree.right.right = new TreeNode(4);
+  tree.left.left.left = new TreeNode(7);
+  tree.left.left.right = new TreeNode(2);
+  tree.right.right.left = new TreeNode(1);
 
-    const tree = new TreeNode(5);
-    tree.left = new TreeNode(4);
-    tree.right = new TreeNode(8);
-    tree.left.left = new TreeNode(11);
-    tree.right.left = new TreeNode(13);
-    tree.right.right = new TreeNode(4);
-    tree.left.left.left = new TreeNode(7);
-    tree.left.left.right = new TreeNode(2);
-    tree.right.right.left = new TreeNode(1);
+  test("Test 1", () => {
+    expect(hasPathSum(tree, 22)).toBe(true);
+  });
 
-    test('Test 1', () => { 
-        expect(hasPathSum(tree, 22)).toBe(true)
-    })
+  test("Test 2", () => {
+    expect(hasPathSum(tree, 5)).toBe(false);
+  });
 
-    test('Test 2', () => {
-        expect(hasPathSum(tree, 5)).toBe(false)
-    })
-
-    test('Test 3', () => {
-        expect(hasPathSum(tree, 0)).toBe(false)
-    })
-})
+  test("Test 3", () => {
+    expect(hasPathSum(tree, 0)).toBe(false);
+  });
+});

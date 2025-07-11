@@ -1,5 +1,5 @@
 import { searchBST } from "./searchBST";
-import  { TreeNode }  from "./node/TreeNode";
+import { TreeNode } from "./node/TreeNode";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
@@ -10,27 +10,23 @@ import { expect, test, describe } from "@jest/globals";
 // Input: root = [4,2,7,1,3], val = 5
 // Output: []
 
-describe('Describe Cases', () => { 
+describe("Describe Cases", () => {
+  const tree = new TreeNode(4);
+  tree.left = new TreeNode(2);
+  tree.right = new TreeNode(7);
+  tree.left.left = new TreeNode(1);
+  tree.left.right = new TreeNode(3);
 
-    const tree = new TreeNode(4);
-    tree.left = new TreeNode(2);
-    tree.right = new TreeNode(7);
-    tree.left.left = new TreeNode(1);
-    tree.left.right = new TreeNode(3);
+  let val1 = 2,
+    val2 = 5;
 
-    let val1 = 2, val2 = 5
+  test("Test 1", () => {
+    const node = searchBST(tree, val1);
+    expect(node).toBe(tree.left);
+  });
 
-    test('Test 1', () => { 
-        const node = searchBST(tree, val1)
-        expect(node).toBe(tree.left)
-    })
-
-    test('Test 2', () => { 
-        const node = searchBST(tree, val2)
-        expect(node).toBe(null)
-    })
+  test("Test 2", () => {
+    const node = searchBST(tree, val2);
+    expect(node).toBe(null);
+  });
 });
-
-
-
- 

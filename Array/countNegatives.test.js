@@ -12,18 +12,24 @@ import { expect, test, describe } from "@jest/globals";
 // Input: grid = [[3,2],[1,0]]
 // Output: 0
 
-describe('Describe Cases', () => { 
+describe("Describe Cases", () => {
+  test("Test 1", () => {
+    const grid1 = [
+      [4, 3, 2, -1],
+      [3, 2, 1, -1],
+      [1, 1, -1, -2],
+      [-1, -1, -2, -3],
+    ];
+    const sum = countNegatives(grid1);
+    expect(sum).toBe(8);
+  });
 
-    test('Test 1', () => { 
-        const grid1 = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
-        const sum = countNegatives(grid1)
-        expect(sum).toBe(8)
-    })
-
-    test('Test 2', () => {
-        const grid2 = [[3,2],[1,0]]
-        const sum = countNegatives(grid2)
-        expect(sum).toBe(0)
-    })
-
+  test("Test 2", () => {
+    const grid2 = [
+      [3, 2],
+      [1, 0],
+    ];
+    const sum = countNegatives(grid2);
+    expect(sum).toBe(0);
+  });
 });

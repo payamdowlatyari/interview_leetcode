@@ -2,8 +2,8 @@
 
 // Two strings s and t are isomorphic if the characters in s can be replaced to get t.
 
-// All occurrences of a character must be replaced with another character 
-// while preserving the order of characters. No two characters may map to 
+// All occurrences of a character must be replaced with another character
+// while preserving the order of characters. No two characters may map to
 // the same character, but a character may map to itself.
 
 // Constraints:
@@ -14,34 +14,34 @@
 
 /**
  * Checks if two strings are isomorphic.
- * 
+ *
  * @param {string} s
  * @param {string} t
  * @return {boolean}
  * 
+ * @example
+ * Input: s = "egg", t = "add"
+ * Output: true
+ *
  * Time complexity: O(n)
  * Space complexity: O(1)
  */
 export function isIsomorphic(s, t) {
-    
-    if (s.length != t.length) return false;
+  if (s.length != t.length) return false;
 
-    let i = 0;
+  let i = 0;
 
-    while (i < s.length) {
-            
-            let j = i + 1;
+  while (i < s.length) {
+    let j = i + 1;
 
-            while (j < t.length) {
-                
-                if (t[j] == t[i] && s[j] != s[i]) return false;
-                if (s[j] == s[i] && t[j] != t[i]) return false;
+    while (j < t.length) {
+      if (t[j] == t[i] && s[j] != s[i]) return false;
+      if (s[j] == s[i] && t[j] != t[i]) return false;
 
-
-                j++
-            }
-        i++
+      j++;
     }
+    i++;
+  }
 
-    return true;
-};
+  return true;
+}

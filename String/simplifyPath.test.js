@@ -32,34 +32,34 @@ import { expect, test, describe } from "@jest/globals";
 // Explanation:
 // "..." is a valid name for a directory in this problem.
 
-describe('simplifyPath', () => {
-    test('Example 1', () => {
-        const path1 = "/home/";
-        const result1 = simplifyPath(path1);
-        expect(result1).toBe("/home");
-    });
+describe("simplifyPath", () => {
+  test("Example 1", () => {
+    const path1 = "/home/";
+    const result1 = simplifyPath(path1);
+    expect(result1).toBe("/home");
+  });
 
-    test('Example 2', () => {
-        const path2 = "/home//foo/";
-        const result2 = simplifyPath(path2);
-        expect(result2).toBe("/home/foo");
-    });
+  test("Example 2", () => {
+    const path2 = "/home//foo/";
+    const result2 = simplifyPath(path2);
+    expect(result2).toBe("/home/foo");
+  });
 
-    test('Example 3', () => {
-        const path3 = "/home/user/Documents/../Pictures";
-        const result3 = simplifyPath(path3);
-        expect(result3).toBe("/home/user/Pictures");
-    });
+  test("Example 3", () => {
+    const path3 = "/home/user/Documents/../Pictures";
+    const result3 = simplifyPath(path3);
+    expect(result3).toBe("/home/user/Pictures");
+  });
 
-    test('Example 4', () => {
-        const path4 = "/../";
-        const result4 = simplifyPath(path4);
-        expect(result4).toBe("/");
-    });
+  test("Example 4", () => {
+    const path4 = "/../";
+    const result4 = simplifyPath(path4);
+    expect(result4).toBe("/");
+  });
 
-    test('Example 5', () => {
-        const path5 = "/.../a/../b/c/../d/./";
-        const result5 = simplifyPath(path5);
-        expect(result5).toBe("/.../b/d");
-    });
+  test("Example 5", () => {
+    const path5 = "/.../a/../b/c/../d/./";
+    const result5 = simplifyPath(path5);
+    expect(result5).toBe("/.../b/d");
+  });
 });

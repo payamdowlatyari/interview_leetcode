@@ -10,12 +10,12 @@ import { expect, test, describe } from "@jest/globals";
 // Input: s = "PPALLL"
 // Output: false
 // Explanation: The student was late 3 consecutive days in the last 3 days, so is not eligible for the award.
- 
+
 describe("checkRecord", () => {
-    test("Example 1", () => {
-        expect(checkRecord("PPALLP")).toBe(true);
-    });
-    test("Example 2", () => {
-        expect(checkRecord("PPALLL")).toBe(false);
-    });
+  test("Example 1", () => {
+    expect(checkRecord("PPALLP")).toBe(true);
+  });
+  test("Example 2", () => {
+    expect(checkRecord("PPALLL")).toBe(false);
+  });
 });

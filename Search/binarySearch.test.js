@@ -14,10 +14,10 @@ import { expect, test, describe } from "@jest/globals";
 // Explanation: 2 does not exist in nums so return -1
 
 describe("search", () => {
-    test("Example 1", () => {
-        expect(search([-1, 0, 3, 5, 9, 12], 9)).toBe(4);
-    });
-    test("Example 2", () => {
-        expect(search([-1, 0, 3, 5, 9, 12], 2)).toBe(-1);
-    });
+  test("Example 1", () => {
+    expect(search([-1, 0, 3, 5, 9, 12], 9)).toBe(4);
+  });
+  test("Example 2", () => {
+    expect(search([-1, 0, 3, 5, 9, 12], 2)).toBe(-1);
+  });
 });

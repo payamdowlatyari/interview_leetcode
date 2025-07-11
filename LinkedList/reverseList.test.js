@@ -18,29 +18,28 @@ import { describe, expect, test } from "@jest/globals";
 // Input: head = []
 // Output: []
 
-describe('Reverse Linked List Tests', () => {
+describe("Reverse Linked List Tests", () => {
+  test("Test 1", () => {
+    const head = new ListNode(1);
+    head.next = new ListNode(2);
+    head.next.next = new ListNode(3);
+    head.next.next.next = new ListNode(4);
+    head.next.next.next.next = new ListNode(5);
 
-    test('Test 1', () => {
-        const head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
+    const result = reverseList(head);
+    expect(linkedListToArray(result)).toEqual([5, 4, 3, 2, 1]);
+  });
 
-        const result = reverseList(head);
-        expect(linkedListToArray(result)).toEqual([5, 4, 3, 2, 1]);
-    });
+  test("Test 2", () => {
+    const head = new ListNode(1);
+    head.next = new ListNode(2);
 
-    test('Test 2', () => {
-        const head = new ListNode(1);
-        head.next = new ListNode(2);
+    const result = reverseList(head);
+    expect(linkedListToArray(result)).toEqual([2, 1]);
+  });
 
-        const result = reverseList(head);
-        expect(linkedListToArray(result)).toEqual([2, 1]);
-    });
-
-    test('Test 3', () => {
-        const result = reverseList(null);
-        expect(linkedListToArray(result)).toEqual([]);
-    });
+  test("Test 3", () => {
+    const result = reverseList(null);
+    expect(linkedListToArray(result)).toEqual([]);
+  });
 });

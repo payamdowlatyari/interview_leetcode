@@ -1,14 +1,14 @@
 import { ListNode } from "./node/ListNode";
 
-// In a linked list of size n, where n is even, the ith node (0-indexed) 
-// of the linked list is known as the twin of the (n-1-i)th node, 
+// In a linked list of size n, where n is even, the ith node (0-indexed)
+// of the linked list is known as the twin of the (n-1-i)th node,
 // if 0 <= i <= (n / 2) - 1.
 
-// For example, if n = 4, then node 0 is the twin of node 3, and node 1 is the twin of node 2. 
+// For example, if n = 4, then node 0 is the twin of node 3, and node 1 is the twin of node 2.
 // These are the only nodes with twins for n = 4.
 // The twin sum is defined as the sum of a node and its twin.
 
-// Given the head of a linked list with even length, 
+// Given the head of a linked list with even length,
 // return the maximum twin sum of the linked list.
 
 // Constraints:
@@ -24,37 +24,39 @@ import { ListNode } from "./node/ListNode";
  * }
  */
 /**
+ * Returns the maximum twin sum of a linked list.
+ * 
  * @param {ListNode} head
  * @return {number}
- * 
+ *
+ * @example
+ * const head = new ListNode(5, new ListNode(4, new ListNode(2, new ListNode(1))));
+ * console.log(pairSum(head)); // Output: 6
+ *
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  */
-export function pairSum(head){
+export function pairSum(head) {
+  let list = [];
 
-    let list = [];
+  let curr = head;
 
-    let curr = head;
+  while (curr) {
+    list.push(curr.val);
+    curr = curr.next;
+  }
 
-    while (curr) {
-        list.push(curr.val);
-        curr = curr.next; 
-    }
+  let i = 0;
+  let j = list.length - 1;
 
-    let i = 0;
-    let j = list.length - 1;
+  let max = list[i] + list[j];
 
-    let max = list[i] + list[j];
+  while (i < j) {
+    if (list[i] + list[j] > max) max = list[i] + list[j];
 
-    while (i < j) {
+    i++;
+    j--;
+  }
 
-        if (list[i] + list[j] > max) 
-            max = list[i] + list[j];
-
-        i++;
-        j--;
-    }
-
-    return max;
-
-};
+  return max;
+}

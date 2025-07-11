@@ -12,10 +12,10 @@ import { expect, test, describe } from "@jest/globals";
 // Output: false
 
 describe("isSubsequence", () => {
-   test("Example 1", () => {
-      expect(isSubsequence("abc", "ahbgdc")).toBe(true);
-   });
-   test("Example 2", () => {
-      expect(isSubsequence("axc", "ahbgdc")).toBe(false);
-   });
+  test("Example 1", () => {
+    expect(isSubsequence("abc", "ahbgdc")).toBe(true);
+  });
+  test("Example 2", () => {
+    expect(isSubsequence("axc", "ahbgdc")).toBe(false);
+  });
 });

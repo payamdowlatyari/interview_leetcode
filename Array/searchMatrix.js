@@ -15,34 +15,40 @@
  * Searches for a target value in a 2D matrix.
  * The matrix is sorted such that each row is in non-decreasing order,
  * and the first integer of each row is greater than the last integer of the previous row.
- * 
+ *
  * @param {number[][]} matrix
  * @param {number} target
  * @return {boolean}
  * 
+ * @example
+ * Input: matrix = [[1,2,3],[4,5,6],[7,8,9]], target = 5
+ * Output: true
+ *
  * Time complexity: O(log(m * n))
  * Space complexity: O(1)
  */
 export function searchMatrix(matrix, target) {
-  
-    let i = 0;   
-    let found = false;
-    while (i < matrix.length) {  
-        let j = 0;
-            if (target == matrix[i][j]) {
-                found = true;
-                break;
-            } 
-            if (target > matrix[i][j] && (i + 1 == matrix.length || target < matrix[i + 1][j])) {
-                while (j < matrix[i].length) {
-                    if (target == matrix[i][j]) {
-                        found = true;
-                        break;
-                    }
-                    j++;
-                }
-            }
-        i++;
+  let i = 0;
+  let found = false;
+  while (i < matrix.length) {
+    let j = 0;
+    if (target == matrix[i][j]) {
+      found = true;
+      break;
     }
-    return found;
-};
+    if (
+      target > matrix[i][j] &&
+      (i + 1 == matrix.length || target < matrix[i + 1][j])
+    ) {
+      while (j < matrix[i].length) {
+        if (target == matrix[i][j]) {
+          found = true;
+          break;
+        }
+        j++;
+      }
+    }
+    i++;
+  }
+  return found;
+}

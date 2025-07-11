@@ -13,14 +13,12 @@ import { expect, it, describe } from "@jest/globals";
 // Output: "123"
 // Explanation: Integer "123" has no trailing zeros, we return integer "123".
 
-describe('Remove Trailing Zeros Tests', () => {
+describe("Remove Trailing Zeros Tests", () => {
+  it("should return 512301 for the first example", () => {
+    expect(removeTrailingZeros("51230100")).toBe("512301");
+  });
 
-    it('should return 512301 for the first example', () => {
-        expect(removeTrailingZeros('51230100')).toBe('512301');
-    });
-
-    it('should return 123 for the second example', () => {
-        expect(removeTrailingZeros('123')).toBe('123');
-    });
-
+  it("should return 123 for the second example", () => {
+    expect(removeTrailingZeros("123")).toBe("123");
+  });
 });

@@ -9,18 +9,16 @@ import { expect, test, describe } from "@jest/globals";
 // Input: s = "Mr Ding"
 // Output: "rM gniD"
 
-describe('Reverse Words in a String II', () => { 
+describe("Reverse Words in a String II", () => {
+  test("Test 1", () => {
+    const s1 = "Let's take LeetCode contest";
+    const result = reverseWords(s1);
+    expect(result).toBe("s'teL ekat edoCteeL tsetnoc");
+  });
 
-    test('Test 1', () => { 
-        const s1 = "Let's take LeetCode contest"
-        const result = reverseWords(s1)
-        expect(result).toBe("s'teL ekat edoCteeL tsetnoc")
-    })
-
-    test('Test 2', () => {
-        const s2 = "Mr Ding"
-        const result = reverseWords(s2)
-        expect(result).toBe("rM gniD")
-    })
-
+  test("Test 2", () => {
+    const s2 = "Mr Ding";
+    const result = reverseWords(s2);
+    expect(result).toBe("rM gniD");
+  });
 });

@@ -9,25 +9,33 @@ import { TreeNode } from "./node/TreeNode";
 
 /**
  * Calculates the height of a binary tree.
- * 
+ *
  * @param {TreeNode} root - The root of the tree
  * @return {number} The height of the tree
  */
 const height = (root) => {
-    if (!root) return 0;
-    return Math.max(height(root.left), height(root.right)) + 1;
-}
+  if (!root) return 0;
+  return Math.max(height(root.left), height(root.right)) + 1;
+};
 
 /**
  * Checks if a binary tree is balanced.
- * 
+ *
  * @param {TreeNode} root
  * @return {boolean}
  * 
+ * @example
+ * Input: root = [3,9,20,null,null,15,7]
+ * Output: true
+ *
  * Time complexity: O(n) where n is the number of nodes in the tree
  * Space complexity: O(n) where n is the number of nodes in the tree
  */
 export function isBalanced(root) {
-    if (!root) return true;
-    return Math.abs(height(root.left) - height(root.right)) <= 1 && isBalanced(root.left) && isBalanced(root.right);
-};
+  if (!root) return true;
+  return (
+    Math.abs(height(root.left) - height(root.right)) <= 1 &&
+    isBalanced(root.left) &&
+    isBalanced(root.right)
+  );
+}

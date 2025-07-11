@@ -18,13 +18,13 @@ import { expect, test, describe } from "@jest/globals";
 // Explanation: s becomes "c" while t becomes "b".
 
 describe("backspaceCompare", () => {
-    test("Example 1", () => {
-        expect(backspaceCompare("ab#c", "ad#c")).toBe(true);
-    });
-    test("Example 2", () => {
-        expect(backspaceCompare("ab##", "c#d#")).toBe(true);
-    });
-    test("Example 3", () => {
-        expect(backspaceCompare("a#c", "b")).toBe(false);
-    });
+  test("Example 1", () => {
+    expect(backspaceCompare("ab#c", "ad#c")).toBe(true);
+  });
+  test("Example 2", () => {
+    expect(backspaceCompare("ab##", "c#d#")).toBe(true);
+  });
+  test("Example 3", () => {
+    expect(backspaceCompare("a#c", "b")).toBe(false);
+  });
 });

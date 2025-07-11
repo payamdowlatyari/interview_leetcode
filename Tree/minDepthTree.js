@@ -16,19 +16,22 @@ import { TreeNode } from "./node/TreeNode";
  * @param {TreeNode} root - the root of the binary tree
  * @return {number} the minimum depth of the tree
  * 
+ * @example
+ * Input: root = [3,9,20,null,null,15,7]
+ * Output: 2
+ *
  * Time complexity: O(n) where n is the number of nodes in the tree
  * Space complexity: O(n) where n is the number of nodes in the tree
  */
-export function minDepth(root) { 
-   
-    if (!root) return 0;
-    
-    let leftDepth = minDepth(root.left);
-    let rightDepth = minDepth(root.right);
+export function minDepth(root) {
+  if (!root) return 0;
 
-    if (leftDepth === 0 || rightDepth === 0) {
-        return 1 + Math.max(leftDepth, rightDepth);
-    }
+  let leftDepth = minDepth(root.left);
+  let rightDepth = minDepth(root.right);
 
-    return 1 + Math.min(leftDepth, rightDepth);
-};
+  if (leftDepth === 0 || rightDepth === 0) {
+    return 1 + Math.max(leftDepth, rightDepth);
+  }
+
+  return 1 + Math.min(leftDepth, rightDepth);
+}

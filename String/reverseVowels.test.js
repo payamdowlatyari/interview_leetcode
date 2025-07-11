@@ -10,12 +10,12 @@ import { expect, test, describe } from "@jest/globals";
 
 // Input: s = "leetcode"
 // Output: "leotcede"
- 
+
 describe("reverseVowels", () => {
-    test("Example 1", () => {
-        expect(reverseVowels("hello")).toBe("holle");
-    });
-    test("Example 2", () => {
-        expect(reverseVowels("leetcode")).toBe("leotcede");
-    });
+  test("Example 1", () => {
+    expect(reverseVowels("hello")).toBe("holle");
+  });
+  test("Example 2", () => {
+    expect(reverseVowels("leetcode")).toBe("leotcede");
+  });
 });

@@ -15,44 +15,42 @@ import { describe, expect, test } from "@jest/globals";
 // Output
 // [null, null, null, 1, 1, false]
 
-describe('Describe Cases MyStack', () => { 
+describe("Describe Cases MyStack", () => {
+  const myStack = new MyStack();
+  myStack.push(1);
+  myStack.push(2);
 
-    const myStack = new MyStack();
-    myStack.push(1)
-    myStack.push(2)
+  var item1 = myStack.top();
+  test("Test 1", () => {
+    expect(item1).toBe(2);
+  });
 
-    var item1 = myStack.top()
-    test('Test 1', () => { 
-        expect(item1).toBe(2)
-    })
+  var item2 = myStack.pop();
+  test("Test 2", () => {
+    expect(item2).toBe(2);
+  });
 
-    var item2 = myStack.pop()
-    test('Test 2', () => { 
-        expect(item2).toBe(2)
-    });
-
-    test('Test 3', () => { 
-        expect(myStack.empty()).toBe(false)
-    })
+  test("Test 3", () => {
+    expect(myStack.empty()).toBe(false);
+  });
 });
 
-describe('Describe Cases MyQueue', () => { 
+describe("Describe Cases MyQueue", () => {
+  const myQueue = new MyQueue();
+  myQueue.push(1);
+  myQueue.push(2);
 
-    const myQueue = new MyQueue();
-    myQueue.push(1)
-    myQueue.push(2)
+  var item1 = myQueue.peek();
+  test("Test 1", () => {
+    expect(item1).toBe(1);
+  });
 
-    var item1 = myQueue.peek()
-    test('Test 1', () => { 
-        expect(item1).toBe(1)
-    })
+  var item2 = myQueue.pop();
+  test("Test 2", () => {
+    expect(item2).toBe(1);
+  });
 
-    var item2 = myQueue.pop()
-    test('Test 2', () => { 
-        expect(item2).toBe(1)
-    })
-
-    test('Test 3', () => { 
-        expect(myQueue.empty()).toBe(false)
-    })
+  test("Test 3", () => {
+    expect(myQueue.empty()).toBe(false);
+  });
 });

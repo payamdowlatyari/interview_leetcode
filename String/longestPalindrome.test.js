@@ -18,7 +18,6 @@ import { expect, test, describe } from "@jest/globals";
 // Output: 1
 // Explanation: The longest palindrome that can be built is "a", whose length is 1.
 
-
 // Example 4:
 
 // Input: s = "abccba"
@@ -26,19 +25,19 @@ import { expect, test, describe } from "@jest/globals";
 // Explanation: One longest palindrome that can be built is "abcba", whose length is 6.
 
 describe("longestPalindrome", () => {
-    test("Example 1", () => {
-        expect(longestPalindrome("abccccdd")).toBe(7);
-    });
-    test("Example 2", () => {
-        expect(longestPalindrome("a")).toBe(1);
-    });
-    test("Example 3", () => {
-        expect(longestPalindrome("abc")).toBe(1);
-    });
-    test("Example 4", () => {
-        expect(longestPalindrome("abccba")).toBe(6);
-    });
-    test("Empty string", () => {
-        expect(longestPalindrome("")).toBe(0);
-    });
-})
+  test("Example 1", () => {
+    expect(longestPalindrome("abccccdd")).toBe(7);
+  });
+  test("Example 2", () => {
+    expect(longestPalindrome("a")).toBe(1);
+  });
+  test("Example 3", () => {
+    expect(longestPalindrome("abc")).toBe(1);
+  });
+  test("Example 4", () => {
+    expect(longestPalindrome("abccba")).toBe(6);
+  });
+  test("Empty string", () => {
+    expect(longestPalindrome("")).toBe(0);
+  });
+});

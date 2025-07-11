@@ -15,24 +15,25 @@ import { expect, test, describe } from "@jest/globals";
 // Input: nums1 = [1,2,3,3], nums2 = [1,1,2,2]
 // Output: [[3],[]]
 // Explanation:
-// For nums1, nums1[2] and nums1[3] are not present in nums2. 
+// For nums1, nums1[2] and nums1[3] are not present in nums2.
 // Since nums1[2] == nums1[3], their value is only included once and answer[0] = [3].
 // Every integer in nums2 is present in nums1. Therefore, answer[1] = [].
 
-describe('Describe Cases', () => { 
+describe("Describe Cases", () => {
+  test("Test 1", () => {
+    const nums1 = [1, 2, 3];
+    const nums2 = [2, 4, 6];
+    const sum = findDifference(nums1, nums2);
+    expect(sum).toEqual([
+      [1, 3],
+      [4, 6],
+    ]);
+  });
 
-    test('Test 1', () => { 
-        const nums1 = [1,2,3]
-        const nums2 = [2,4,6]
-        const sum = findDifference(nums1, nums2)
-        expect(sum).toEqual([[1,3],[4,6]])
-    })
-
-    test('Test 2', () => {
-        const nums1 = [1,2,3,3]
-        const nums2 = [1,1,2,2]
-        const sum = findDifference(nums1, nums2)
-        expect(sum).toEqual([[3],[]])
-    })
-
-})
+  test("Test 2", () => {
+    const nums1 = [1, 2, 3, 3];
+    const nums2 = [1, 1, 2, 2];
+    const sum = findDifference(nums1, nums2);
+    expect(sum).toEqual([[3], []]);
+  });
+});

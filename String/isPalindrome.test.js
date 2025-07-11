@@ -21,13 +21,13 @@ import { expect, test, describe } from "@jest/globals";
 // Since an empty string reads the same forward and backward, it is a palindrome.
 
 describe("isPalindrome", () => {
-    test("Example 1", () => {
-        expect(isPalindrome("A man, a plan, a canal: Panama")).toBe(true);
-    });
-    test("Example 2", () => {
-        expect(isPalindrome("race a car")).toBe(false);
-    });
-    test("Example 3", () => {
-        expect(isPalindrome(" ")).toBe(true);
-    });
+  test("Example 1", () => {
+    expect(isPalindrome("A man, a plan, a canal: Panama")).toBe(true);
+  });
+  test("Example 2", () => {
+    expect(isPalindrome("race a car")).toBe(false);
+  });
+  test("Example 3", () => {
+    expect(isPalindrome(" ")).toBe(true);
+  });
 });

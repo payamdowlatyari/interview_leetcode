@@ -20,13 +20,13 @@ import { expect, test, describe } from "@jest/globals";
 // "06" cannot be mapped to "F" because of the leading zero ("6" is different from "06"). In this case, the string is not a valid encoding, so return 0.
 
 describe("numDecodings", () => {
-    test("Example 1", () => {
-        expect(numDecodings("12")).toBe(2);
-    });
-    test("Example 2", () => {
-        expect(numDecodings("226")).toBe(3);
-    });
-    test("Example 3", () => {
-        expect(numDecodings("06")).toBe(0);
-    });
+  test("Example 1", () => {
+    expect(numDecodings("12")).toBe(2);
+  });
+  test("Example 2", () => {
+    expect(numDecodings("226")).toBe(3);
+  });
+  test("Example 3", () => {
+    expect(numDecodings("06")).toBe(0);
+  });
 });

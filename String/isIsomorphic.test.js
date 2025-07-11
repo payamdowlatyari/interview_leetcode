@@ -17,13 +17,13 @@ import { expect, test, describe } from "@jest/globals";
 // Output: true
 
 describe("isIsomorphic", () => {
-    test("Example 1", () => {
-        expect(isIsomorphic("egg", "add")).toBe(true);
-    });
-    test("Example 2", () => {
-        expect(isIsomorphic("foo", "bar")).toBe(false);
-    });
-    test("Example 3", () => {
-        expect(isIsomorphic("paper", "title")).toBe(true);
-    });
+  test("Example 1", () => {
+    expect(isIsomorphic("egg", "add")).toBe(true);
+  });
+  test("Example 2", () => {
+    expect(isIsomorphic("foo", "bar")).toBe(false);
+  });
+  test("Example 3", () => {
+    expect(isIsomorphic("paper", "title")).toBe(true);
+  });
 });

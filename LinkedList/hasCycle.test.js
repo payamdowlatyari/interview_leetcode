@@ -20,33 +20,31 @@ import { describe, expect, test } from "@jest/globals";
 // Output: false
 // Explanation: There is no cycle in the linked list.
 
-describe('Linked List Cycle Detection', () => {
+describe("Linked List Cycle Detection", () => {
+  test("Test 1", () => {
+    const head1 = new ListNode(3);
+    head1.next = new ListNode(2);
+    head1.next.next = new ListNode(0);
+    head1.next.next.next = new ListNode(-4);
+    head1.next.next.next.next = head1.next; // Creates a cycle
 
-    test('Test 1', () => {
-        const head1 = new ListNode(3);
-        head1.next = new ListNode(2);
-        head1.next.next = new ListNode(0);
-        head1.next.next.next = new ListNode(-4);
-        head1.next.next.next.next = head1.next; // Creates a cycle
+    const result1 = hasCycle(head1);
+    expect(result1).toBe(true);
+  });
 
-        const result1 = hasCycle(head1);
-        expect(result1).toBe(true);
-    });
+  test("Test 2", () => {
+    const head2 = new ListNode(1);
+    head2.next = new ListNode(2);
+    head2.next.next = head2; // Creates a cycle
 
-    test('Test 2', () => {
-        const head2 = new ListNode(1);
-        head2.next = new ListNode(2);
-        head2.next.next = head2; // Creates a cycle
+    const result2 = hasCycle(head2);
+    expect(result2).toBe(true);
+  });
 
-        const result2 = hasCycle(head2);
-        expect(result2).toBe(true);
-    });
+  test("Test 3", () => {
+    const head3 = new ListNode(1); // Single node, no cycle
 
-    test('Test 3', () => {
-        const head3 = new ListNode(1); // Single node, no cycle
-
-        const result3 = hasCycle(head3);
-        expect(result3).toBe(false);
-    });
-
+    const result3 = hasCycle(head3);
+    expect(result3).toBe(false);
+  });
 });

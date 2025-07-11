@@ -14,10 +14,10 @@ import { expect, test, describe } from "@jest/globals";
 // Explanation: 7/-3 = -2.33333.. which is truncated to -2.
 
 describe("divide", () => {
-    test("Example 1", () => {
-        expect(divide(10, 3)).toBe(3);
-    });
-    test("Example 2", () => {
-        expect(divide(7, -3)).toBe(-2);
-    });
+  test("Example 1", () => {
+    expect(divide(10, 3)).toBe(3);
+  });
+  test("Example 2", () => {
+    expect(divide(7, -3)).toBe(-2);
+  });
 });

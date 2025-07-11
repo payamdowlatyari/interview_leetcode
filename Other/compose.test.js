@@ -26,18 +26,18 @@ import { expect, it, describe } from "@jest/globals";
 // Explanation:
 // The composition of zero functions is the identity function
 
-describe('Describe Cases', () => {  
+describe("Describe Cases", () => {
+  it("should return 65 for the first example", () => {
+    expect(compose([(x) => x + 1, (x) => x * x, (x) => 2 * x])(4)).toBe(65);
+  });
 
-   it('should return 65 for the first example', () => {
-      expect(compose([x => x + 1, x => x * x, x => 2 * x])(4)).toBe(65);
-   });
+  it("should return 1000 for the second example", () => {
+    expect(compose([(x) => 10 * x, (x) => 10 * x, (x) => 10 * x])(1)).toBe(
+      1000,
+    );
+  });
 
-   it('should return 1000 for the second example', () => {
-      expect(compose([x => 10 * x, x => 10 * x, x => 10 * x])(1)).toBe(1000);
-   });
-
-   it('should return 42 for the third example', () => {
-      expect(compose([])(42)).toBe(42);
-   });
-
-})
+  it("should return 42 for the third example", () => {
+    expect(compose([])(42)).toBe(42);
+  });
+});

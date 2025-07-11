@@ -1,6 +1,6 @@
 // Function Composition
 
-// Given an array of functions [f1, f2, f3, ..., fn], return a new function 
+// Given an array of functions [f1, f2, f3, ..., fn], return a new function
 // fn that is the function composition of the array of functions.
 
 // The function composition of [f(x), g(x), h(x)] is fn(x) = f(g(h(x))).
@@ -16,21 +16,20 @@
 
 /**
  * Composes an array of functions into a single function.
- * 
+ *
  * @param {Function[]} functions
  * @return {Function}
- * 
+ *
  * @example
  * const functions = [x => x + 1, x => x * x, x => 2 * x];
  * const result = compose(functions)(4);
  * console.log(result); // Output: 65
- * 
+ *
  * Time complexity: O(n)
  * Space complexity: O(1)
  */
 export function compose(functions) {
-    
-    return function(x) {
-        return functions.reduceRight((result, fn) => fn(result), x);
-    }
-};
+  return function (x) {
+    return functions.reduceRight((result, fn) => fn(result), x);
+  };
+}

@@ -16,23 +16,22 @@ import { expect, test, describe } from "@jest/globals";
 // Output: 23
 // Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 
-describe('maxSubArray', () => {
-    test('Example 1', () => {
-        const nums1 = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
-        const result = maxSubArray(nums1);
-        expect(result).toBe(6);
-    });
+describe("maxSubArray", () => {
+  test("Example 1", () => {
+    const nums1 = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+    const result = maxSubArray(nums1);
+    expect(result).toBe(6);
+  });
 
-    test('Example 2', () => {
-        const nums2 = [1];
-        const result = maxSubArray(nums2);
-        expect(result).toBe(1);
-    });
+  test("Example 2", () => {
+    const nums2 = [1];
+    const result = maxSubArray(nums2);
+    expect(result).toBe(1);
+  });
 
-    test('Example 3', () => {
-        const nums3 = [5, 4, -1, 7, 8];
-        const result = maxSubArray(nums3);
-        expect(result).toBe(23);
-    });
+  test("Example 3", () => {
+    const nums3 = [5, 4, -1, 7, 8];
+    const result = maxSubArray(nums3);
+    expect(result).toBe(23);
+  });
 });
- 

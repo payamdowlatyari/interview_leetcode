@@ -14,13 +14,13 @@ import { expect, test, describe } from "@jest/globals";
 // Output: ""
 
 describe("gcdOfStrings", () => {
-    test("Example 1", () => {
-        expect(gcdOfStrings("ABCABC", "ABC")).toBe("ABC");
-    });
-    test("Example 2", () => {
-        expect(gcdOfStrings("ABABAB", "ABAB")).toBe("AB");
-    });
-    test("Example 3", () => {
-        expect(gcdOfStrings("LEET", "CODE")).toBe("");
-    });
+  test("Example 1", () => {
+    expect(gcdOfStrings("ABCABC", "ABC")).toBe("ABC");
+  });
+  test("Example 2", () => {
+    expect(gcdOfStrings("ABABAB", "ABAB")).toBe("AB");
+  });
+  test("Example 3", () => {
+    expect(gcdOfStrings("LEET", "CODE")).toBe("");
+  });
 });

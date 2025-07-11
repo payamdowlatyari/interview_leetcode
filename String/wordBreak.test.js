@@ -18,13 +18,15 @@ import { expect, test, describe } from "@jest/globals";
 // Output: false
 
 describe("wordBreak", () => {
-    test("Example 1", () => {
-        expect(wordBreak("leetcode", ["leet", "code"])).toBe(true);
-    });
-    test("Example 2", () => {
-        expect(wordBreak("applepenapple", ["apple", "pen"])).toBe(true);
-    });
-    test("Example 3", () => {
-        expect(wordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"])).toBe(false);
-    });
+  test("Example 1", () => {
+    expect(wordBreak("leetcode", ["leet", "code"])).toBe(true);
+  });
+  test("Example 2", () => {
+    expect(wordBreak("applepenapple", ["apple", "pen"])).toBe(true);
+  });
+  test("Example 3", () => {
+    expect(wordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"])).toBe(
+      false,
+    );
+  });
 });
