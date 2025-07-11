@@ -1,5 +1,5 @@
 import { pairSum } from "./pairSum";
-import { ListNode } from "./node/ListNode";
+import { ListNode } from "./data-structure/ListNode";
 import { describe, expect, test } from "@jest/globals";
 
 // Example 1:

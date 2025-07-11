@@ -1,5 +1,5 @@
 import { partitionList } from "./partitionList";
-import { ListNode } from "./node/ListNode";
+import { ListNode } from "./data-structure/ListNode";
 import { linkedListToArray } from "./helpers/linkedListToArray";
 import { describe, test, expect } from "@jest/globals";
 

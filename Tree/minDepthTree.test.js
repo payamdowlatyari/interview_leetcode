@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode";
+import { TreeNode } from "./data-structure/TreeNode";
 import { minDepth } from "./minDepthTree";
 import { describe, expect, test } from "@jest/globals";
 

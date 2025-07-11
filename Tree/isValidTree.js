@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode";
+import { TreeNode } from "./data-structure/TreeNode";
 
 // Given the root of a binary tree, determine if it is a valid binary search tree (BST).
 

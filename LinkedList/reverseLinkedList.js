@@ -1,4 +1,4 @@
-import { ListNode } from "./node/ListNode";
+import { ListNode } from "./data-structure/ListNode";
 
 // Reverse Linked List II
 

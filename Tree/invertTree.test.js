@@ -1,5 +1,5 @@
 import { invertTree } from "./invertTree";
-import { TreeNode } from "./node/TreeNode";
+import { TreeNode } from "./data-structure/TreeNode";
 import { breadthFirstTraversal } from "./helpers/traversals";
 import { expect, test, describe } from "@jest/globals";
 

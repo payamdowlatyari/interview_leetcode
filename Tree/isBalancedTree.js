@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode";
+import { TreeNode } from "./data-structure/TreeNode";
 
 // Given a binary tree, determine if it is height-balanced.
 

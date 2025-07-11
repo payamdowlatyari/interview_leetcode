@@ -1,4 +1,4 @@
-import { ListNode } from "./node/ListNode";
+import { ListNode } from "./data-structure/ListNode";
 import { hasCycle } from "./hasCycle";
 import { describe, expect, test } from "@jest/globals";
 

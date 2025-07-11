@@ -1,4 +1,4 @@
-import { TreeNode } from "./node/TreeNode";
+import { TreeNode } from "./data-structure/TreeNode";
 import { isValidBST } from "./isValidTree";
 import { expect, test, describe } from "@jest/globals";
 

@@ -1,6 +1,6 @@
 import { diameterOfBinaryTree } from "./diameterOfBinaryTree";
 import { breadthFirstTraversal } from "./helpers/traversals";
-import { TreeNode } from "./node/TreeNode";
+import { TreeNode } from "./data-structure/TreeNode";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:

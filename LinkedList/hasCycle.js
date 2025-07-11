@@ -1,4 +1,4 @@
-import { ListNode } from "./node/ListNode";
+import { ListNode } from "./data-structure/ListNode";
 
 // Given head, the head of a linked list,
 // determine if the linked list has a cycle in it.

@@ -1,5 +1,5 @@
 import { cloneGraph } from "./cloneGraph";
-import { Node } from "./node/Node";
+import { Node } from "./data-structure/Node";
 import { expect, test, describe } from "@jest/globals";
 
 // Example 1:
